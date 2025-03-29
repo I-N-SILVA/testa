@@ -96,21 +96,21 @@ Detailed documentation is available in Confluence:
 
 **Frontend**
 - [Frontend Architecture](https://plyaz.atlassian.net/wiki/spaces/SD/pages/950287/Frontend+Architecture)
-- [Frontend Private Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/753800/Frontend+Private+Package+Dependencies?atlOrigin=eyJpIjoiZWQ0ODM5OGZjMDYzNGU2YTk3NDgyNWVkYzBkY2Q1MjAiLCJwIjoiYyJ9)
-- [Frontend Data Flow Architecture](https://plyaz.atlassian.net/wiki/spaces/SD/pages/753750/Frontend+Data+Flow+Architecture?atlOrigin=eyJpIjoiMGVjOWRhOGYxNTc1NGFlNWEyOWIwNGZiODA5ZTYzYWIiLCJwIjoiYyJ9)
+- [Frontend Private Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/753800/Frontend+Private+Package+Dependencies)
+- [Frontend Data Flow Architecture](https://plyaz.atlassian.net/wiki/spaces/SD/pages/753750/Frontend+Data+Flow+Architecture)
 
 **Frontend Packages**
-- [Hooks Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/655510/Hooks+Package?atlOrigin=eyJpIjoiNTU5ZDMyYmY5YmY1NDlkNWFiMDAzY2FmZDM1M2JhY2QiLCJwIjoiYyJ9)
-- [UI Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/655450/UI+Package?atlOrigin=eyJpIjoiZTk0Nzk0NDM3NmRmNGYyM2IyYjIyMGMxN2E4Njk2ODUiLCJwIjoiYyJ9)
-- [Store Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/786490/Store+Package?atlOrigin=eyJpIjoiMTQwZWRmN2I1MWYxNDAwNmIyNzQwNTcyMGEwMzI4NzkiLCJwIjoiYyJ9)
+- [Hooks Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/655510/Hooks+Package)
+- [UI Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/655450/UI+Package)
+- [Store Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/786490/Store+Package)
 
 **Shared**
-- [What are Shared Packages?](https://plyaz.atlassian.net/wiki/spaces/SD/pages/950482/What+are+Shared+Packages?atlOrigin=eyJpIjoiYjYyZDlmNDQ1NmRjNDdjZDg0MjU5ZTMwYjg0NTkxZGEiLCJwIjoiYyJ9)
-- [API Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/950316/API+Package?atlOrigin=eyJpIjoiMTBjNTNhMjVkMDRlNDE1NzkwNTQxNzM1NTA0ZGI2NzYiLCJwIjoiYyJ9)
-- [Config Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/950387/Config+Package?atlOrigin=eyJpIjoiZjM3NWZlMTBhZjMxNDk1NGFhZjkxYjEwZmM2NGJkZWMiLCJwIjoiYyJ9)
-- [Types Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/950359/Types+Package?atlOrigin=eyJpIjoiNjgyMTZiMzIxYTE1NDMwN2JlYmZkYjBiMjY3ODI1YWQiLCJwIjoiYyJ9)
-- [Wen3 Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/950332/Web3+Package?atlOrigin=eyJpIjoiOWQzZTBhNjM1NDA2NGQwOWI1NjY1ZGE0YjFmZTRmYTUiLCJwIjoiYyJ9)
-- [Config Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/950387/Config+Package?atlOrigin=eyJpIjoiZjM3NWZlMTBhZjMxNDk1NGFhZjkxYjEwZmM2NGJkZWMiLCJwIjoiYyJ9)
+- [What are Shared Packages?](https://plyaz.atlassian.net/wiki/spaces/SD/pages/950482/What+are+Shared+Packages)
+- [API Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/950316/API+Package)
+- [Config Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/950387/Config+Package)
+- [Types Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/950359/Types+Package)
+- [Wen3 Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/950332/Web3+Package)
+- [Config Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/950387/Config+Package)
 
 **Processes**
 - [Deployment Process](https://plyaz.atlassian.net/wiki/spaces/SD/pages/1212418/Deployment)
