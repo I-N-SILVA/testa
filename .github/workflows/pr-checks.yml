@@ -1,4 +1,4 @@
-name: PR Checks
+name: Landing Page - PR Checks
 
 on:
   push:

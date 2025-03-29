@@ -94,10 +94,12 @@ Our CI/CD pipeline is built with GitHub Actions:
 
 Detailed documentation is available in Confluence:
 
-**Frontend Focus**
+**Frontend**
 - [Frontend Architecture](https://plyaz.atlassian.net/wiki/spaces/SD/pages/950287/Frontend+Architecture)
 - [Frontend Private Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/753800/Frontend+Private+Package+Dependencies?atlOrigin=eyJpIjoiZWQ0ODM5OGZjMDYzNGU2YTk3NDgyNWVkYzBkY2Q1MjAiLCJwIjoiYyJ9)
 - [Frontend Data Flow Architecture](https://plyaz.atlassian.net/wiki/spaces/SD/pages/753750/Frontend+Data+Flow+Architecture?atlOrigin=eyJpIjoiMGVjOWRhOGYxNTc1NGFlNWEyOWIwNGZiODA5ZTYzYWIiLCJwIjoiYyJ9)
+
+**Frontend Packages**
 - [Hooks Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/655510/Hooks+Package?atlOrigin=eyJpIjoiNTU5ZDMyYmY5YmY1NDlkNWFiMDAzY2FmZDM1M2JhY2QiLCJwIjoiYyJ9)
 - [UI Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/655450/UI+Package?atlOrigin=eyJpIjoiZTk0Nzk0NDM3NmRmNGYyM2IyYjIyMGMxN2E4Njk2ODUiLCJwIjoiYyJ9)
 - [Store Package](https://plyaz.atlassian.net/wiki/spaces/SD/pages/786490/Store+Package?atlOrigin=eyJpIjoiMTQwZWRmN2I1MWYxNDAwNmIyNzQwNTcyMGEwMzI4NzkiLCJwIjoiYyJ9)
@@ -115,9 +117,6 @@ Detailed documentation is available in Confluence:
 
 **Architecture & Strategies**
 - [Testing Strategy](https://plyaz.atlassian.net/wiki/spaces/SD/pages/1310734/Testing+Strategy)
-- [Frontend Architecture](https://plyaz.atlassian.net/wiki/spaces/SD/pages/950287/Frontend+Architecture)
-- [Frontend Data Flow Architecture](https://plyaz.atlassian.net/wiki/spaces/SD/pages/753750/Frontend+Data+Flow+Architecture)
-- [Frontend Private Package Dependencies](https://plyaz.atlassian.net/wiki/spaces/SD/pages/753800/Frontend+Private+Package+Dependencies)
 
 ## 📈 Roadmap
 
