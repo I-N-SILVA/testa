@@ -18,7 +18,7 @@ This repository contains the frontend codebase for Plyaz, a web3-enabled platfor
 ## 📂 Repository Structure
 
 ```
-Web-App/
+Landing-Page/
 ├── .github/                  # GitHub workflows for CI/CD
 ├── public/                   # Static assets
 ├── src/
