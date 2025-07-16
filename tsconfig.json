@@ -1,0 +1,34 @@
+{
+  "extends": "@plyaz/devtools/configs/tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "composite": true,
+    "allowJs": true,
+    "incremental": true,
+    "jsx": "preserve",
+    "moduleResolution": "bundler",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/app/*"
+      ]
+    },
+    "plugins": [
+            {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "./src/**/*",
+    "./tests/**/*",
+    ".next/types/**/*.ts",
+    "*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "build",
+    "coverage"
+  ]
+}
