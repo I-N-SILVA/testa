@@ -1,7 +1,7 @@
-import React from 'react';
-import { useTranslations } from 'next-intl';
-import type { AppTranslationKeys } from '@plyaz/translations';
-import type { TranslationOptions } from '@plyaz/types/translations';
+import React from "react";
+import { useTranslations } from "next-intl";
+import type { AppTranslationKeys } from "@plyaz/translations";
+import type { TranslationOptions } from "@plyaz/types/translations";
 
 interface TranslatedHtmlProps {
   translationKey: AppTranslationKeys;
@@ -35,12 +35,12 @@ const TranslatedHtml: React.FC<TranslatedHtmlProps> = ({
   translationKey,
   translationOptions,
   className,
-  tag = 'div',
+  tag = "div",
 }) => {
   const t = useTranslations();
   const translated = t(
     translationKey,
-    translationOptions?.args as Record<string, string | number | Date>
+    translationOptions?.args as Record<string, string | number | Date>,
   );
   return React.createElement(tag, { className }, translated);
 };

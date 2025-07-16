@@ -1,13 +1,13 @@
-'use client';
+"use client";
 
-import { LanguageSelector } from '@plyaz/ui';
-import type { NamespaceKeys } from 'next-intl';
-import { useLocale, useTranslations } from 'next-intl';
-import { useParams } from 'next/navigation';
-import { useTransition } from 'react';
+import { LanguageSelector } from "@plyaz/ui";
+import type { NamespaceKeys } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { useParams } from "next/navigation";
+import { useTransition } from "react";
 
-import { useRouter, usePathname } from 'src/i18n/navigation';
-import { routing } from 'src/i18n/routing';
+import { useRouter, usePathname } from "src/i18n/navigation";
+import { routing } from "src/i18n/routing";
 
 /**
  * LanguageSelector component for switching between available locales.
@@ -31,7 +31,7 @@ import { routing } from 'src/i18n/routing';
  * @returns A Select component with locale options
  */
 export default function LanguageSelectorWrapper() {
-  const t = useTranslations('components.LanguageSelector');
+  const t = useTranslations("components.LanguageSelector");
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
@@ -43,7 +43,7 @@ export default function LanguageSelectorWrapper() {
       router.replace(
         // @ts-expect-error - params is not defined in the type
         { pathname, params },
-        { locale: nextLocale }
+        { locale: nextLocale },
       );
     });
   };
@@ -54,7 +54,12 @@ export default function LanguageSelectorWrapper() {
       locales={routing.locales as string[]}
       onChange={handleChange}
       getLabel={(loc: string) =>
-        t(`locale.${loc}` as NamespaceKeys<typeof t, 'components.LanguageSelector'>)
+        t(
+          `locale.${loc}` as NamespaceKeys<
+            typeof t,
+            "components.LanguageSelector"
+          >,
+        )
       }
       disabled={isPending}
     />

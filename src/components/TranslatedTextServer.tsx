@@ -1,11 +1,11 @@
-import React from 'react';
-import { useTranslations } from 'next-intl';
-import type { AppTranslationKeys } from '@plyaz/translations';
-import type { TranslationOptions } from '@plyaz/types/translations';
-import type { TextProps } from '@plyaz/ui';
-import { Text } from '@plyaz/ui';
+import React from "react";
+import { useTranslations } from "next-intl";
+import type { AppTranslationKeys } from "@plyaz/translations";
+import type { TranslationOptions } from "@plyaz/types/translations";
+import type { TextProps } from "@plyaz/ui";
+import { Text } from "@plyaz/ui";
 
-interface TranslatedTextProps extends Omit<TextProps, 'children'> {
+interface TranslatedTextProps extends Omit<TextProps, "children"> {
   translationKey: AppTranslationKeys;
   translationOptions?: TranslationOptions;
 }
@@ -50,7 +50,7 @@ const TranslatedText: React.FC<TranslatedTextProps> = ({
   const t = useTranslations();
   const translated = t(
     translationKey,
-    translationOptions?.args as Record<string, string | number | Date>
+    translationOptions?.args as Record<string, string | number | Date>,
   );
   return <Text {...textProps}>{translated}</Text>;
 };

@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@plyaz/devtools':
-        specifier: ^1.6.4
+        specifier: ^1.7.3
         version: 1.7.3(c48124f2e3224b4615e02c08aa08295e)
       '@plyaz/translations':
         specifier: ^1.2.0

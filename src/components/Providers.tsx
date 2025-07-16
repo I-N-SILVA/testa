@@ -1,9 +1,9 @@
-'use client';
-import type { Messages } from 'next-intl';
-import { NextIntlClientProvider } from 'next-intl';
-import type { SupportedLanguage } from '@plyaz/types';
-import { TranslationProvider } from '@plyaz/translations/frontend';
-import config from '@plyaz/translations/config';
+"use client";
+import type { Messages } from "next-intl";
+import { NextIntlClientProvider } from "next-intl";
+import type { SupportedLanguage } from "@plyaz/types";
+import { TranslationProvider } from "@plyaz/translations/frontend";
+import config from "@plyaz/translations/config";
 
 export default function Providers({
   children,
