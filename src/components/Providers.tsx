@@ -2,6 +2,7 @@
 import type { Messages } from "next-intl";
 import { NextIntlClientProvider } from "next-intl";
 import type { SupportedLanguage } from "@plyaz/types";
+import { timeZone } from "@plyaz/translations";
 import { TranslationProvider } from "@plyaz/translations/frontend";
 import config from "@plyaz/translations/config";
 
@@ -15,7 +16,11 @@ export default function Providers({
   locale: SupportedLanguage;
 }) {
   return (
-    <NextIntlClientProvider messages={messages} locale={locale}>
+    <NextIntlClientProvider
+      timeZone={timeZone}
+      messages={messages}
+      locale={locale}
+    >
       <TranslationProvider
         config={{
           ...config,

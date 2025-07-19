@@ -12,14 +12,14 @@ importers:
         specifier: ^1.7.3
         version: 1.7.3(c48124f2e3224b4615e02c08aa08295e)
       '@plyaz/translations':
-        specifier: ^1.2.0
-        version: 1.2.0(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.2(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2))(nestjs-i18n@10.5.1(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.2(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-validator@0.14.2)(rxjs@7.8.2))(next-intl@4.3.4(next@15.3.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(typescript@5.8.3))(react@19.1.0)(reflect-metadata@0.2.2)
+        specifier: ^1.3.1
+        version: 1.3.1(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.2(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2))(nestjs-i18n@10.5.1(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.2(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-validator@0.14.2)(rxjs@7.8.2))(next-intl@4.3.4(next@15.3.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(typescript@5.8.3))(react@19.1.0)(reflect-metadata@0.2.2)
       '@plyaz/types':
         specifier: ^1.1.3
         version: 1.1.3(next@15.3.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@plyaz/ui':
-        specifier: ^0.5.3
-        version: 0.5.3(18621dc535e782ad1bccdacd0fd6f7d5)
+        specifier: ^0.5.4
+        version: 0.5.4(18621dc535e782ad1bccdacd0fd6f7d5)
       next:
         specifier: 15.3.3
         version: 15.3.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
@@ -849,18 +849,8 @@ packages:
       eslint-plugin-unicorn: ^59.0.1
       eslint-plugin-unused-imports: ^4.0.0
 
-  '@plyaz/translations@1.2.0':
-    resolution: {integrity: sha512-0g5MqhXPjTz1DvL243agbX4Sb3jmRF85zJiJ9G9IQQBpqeqnH3OrdReYItg7iOuGRG84DcYgCx2wRwRdUPyR3g==}
-    peerDependencies:
-      '@nestjs/common': 11.1.2
-      '@nestjs/core': 11.1.2
-      nestjs-i18n: 10.5.1
-      next-intl: 4.1.0
-      react: 19.1.0
-      reflect-metadata: 0.2.2
-
-  '@plyaz/translations@1.2.1':
-    resolution: {integrity: sha512-n41hZsNdm8ucf+IRmHTrEnDNbYV3HG78Sgpi7l4ecoQYAdA+7wICXz3el3/MdwtUZp9K/DBzfDYuEJbFFJxyUQ==}
+  '@plyaz/translations@1.3.1':
+    resolution: {integrity: sha512-sI7n71pdnfdRh9+nlwunCSgNukM+U5AOYZk69eCEGPBZlqWqrpnkUBfr7LGFD2ZmrDACrQkcPZKNWHD9q7R8Fg==}
     peerDependencies:
       '@nestjs/common': 11.1.2
       '@nestjs/core': 11.1.2
@@ -884,8 +874,8 @@ packages:
       react-dom:
         optional: true
 
-  '@plyaz/ui@0.5.3':
-    resolution: {integrity: sha512-gwniETWVlEycmVOYct6EuZFRODR7oh2z8Dl4McJzFYORh5wOZC0yFSCTGTGBh+73SMmnL/5E0YyM69dGK5fkJA==}
+  '@plyaz/ui@0.5.4':
+    resolution: {integrity: sha512-dsfjQeYt7jPwf15z7rc+TGwzTUPeFb6BljOq5M3bkS69wEJiRl6bmWLht+7OGzl0IN0qCMoG7icEziWqBpgTAw==}
     engines: {node: '>=22.4.0', pnpm: '>=8.0.0'}
 
   '@radix-ui/number@1.1.1':
@@ -5537,18 +5527,7 @@ snapshots:
       eslint-plugin-unused-imports: 4.1.4(@typescript-eslint/eslint-plugin@8.37.0(@typescript-eslint/parser@8.37.0(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.31.0(jiti@2.4.2))(typescript@5.8.3))(eslint@9.31.0(jiti@2.4.2))
       happy-dom: 18.0.1
 
-  '@plyaz/translations@1.2.0(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.2(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2))(nestjs-i18n@10.5.1(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.2(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-validator@0.14.2)(rxjs@7.8.2))(next-intl@4.3.4(next@15.3.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(typescript@5.8.3))(react@19.1.0)(reflect-metadata@0.2.2)':
-    dependencies:
-      '@nestjs/common': 11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2)
-      '@nestjs/core': 11.1.2(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2)
-      commander: 14.0.0
-      glob: 11.0.2
-      nestjs-i18n: 10.5.1(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.2(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-validator@0.14.2)(rxjs@7.8.2)
-      next-intl: 4.3.4(next@15.3.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(typescript@5.8.3)
-      react: 19.1.0
-      reflect-metadata: 0.2.2
-
-  '@plyaz/translations@1.2.1(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.2(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2))(nestjs-i18n@10.5.1(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.2(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-validator@0.14.2)(rxjs@7.8.2))(next-intl@4.3.4(next@15.3.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(typescript@5.8.3))(react@19.1.0)(reflect-metadata@0.2.2)':
+  '@plyaz/translations@1.3.1(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.2(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2))(nestjs-i18n@10.5.1(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.2(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-validator@0.14.2)(rxjs@7.8.2))(next-intl@4.3.4(next@15.3.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(typescript@5.8.3))(react@19.1.0)(reflect-metadata@0.2.2)':
     dependencies:
       '@nestjs/common': 11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/core': 11.1.2(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2)
@@ -5565,10 +5544,10 @@ snapshots:
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
 
-  '@plyaz/ui@0.5.3(18621dc535e782ad1bccdacd0fd6f7d5)':
+  '@plyaz/ui@0.5.4(18621dc535e782ad1bccdacd0fd6f7d5)':
     dependencies:
       '@plyaz/devtools': 1.7.3(c48124f2e3224b4615e02c08aa08295e)
-      '@plyaz/translations': 1.2.1(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.2(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2))(nestjs-i18n@10.5.1(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.2(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-validator@0.14.2)(rxjs@7.8.2))(next-intl@4.3.4(next@15.3.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(typescript@5.8.3))(react@19.1.0)(reflect-metadata@0.2.2)
+      '@plyaz/translations': 1.3.1(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.2(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2))(nestjs-i18n@10.5.1(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(@nestjs/core@11.1.2(@nestjs/common@11.1.4(class-validator@0.14.2)(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2))(class-validator@0.14.2)(rxjs@7.8.2))(next-intl@4.3.4(next@15.3.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)(typescript@5.8.3))(react@19.1.0)(reflect-metadata@0.2.2)
       '@plyaz/types': 1.1.3(next@15.3.3(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@radix-ui/react-menubar': 1.1.15(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@radix-ui/react-select': 2.2.5(@types/react-dom@19.1.6(@types/react@19.1.8))(@types/react@19.1.8)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
