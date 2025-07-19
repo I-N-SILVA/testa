@@ -15,7 +15,11 @@ export default function Providers({
   locale: SupportedLanguage;
 }) {
   return (
-    <NextIntlClientProvider messages={messages} locale={locale}>
+    <NextIntlClientProvider
+      timeZone="Europe/London"
+      messages={messages}
+      locale={locale}
+    >
       <TranslationProvider
         config={{
           ...config,
