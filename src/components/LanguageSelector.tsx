@@ -54,12 +54,7 @@ export default function LanguageSelectorWrapper() {
       locales={routing.locales as string[]}
       onChange={handleChange}
       getLabel={(loc: string) =>
-        t(
-          `locale.${loc}` as NamespaceKeys<
-            typeof t,
-            "LanguageSelector"
-          >,
-        )
+        t(`locale.${loc}` as NamespaceKeys<typeof t, "LanguageSelector">)
       }
       disabled={isPending}
     />

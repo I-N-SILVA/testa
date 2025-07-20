@@ -1,25 +1,40 @@
-import type React from "react"
-import { Box, Heading, Paragraph, Stack } from "@plyaz/ui"
+import type React from "react";
+import { Box, Heading, Paragraph, Stack } from "@plyaz/ui";
 
 interface FeatureCardProps {
-  icon: React.ReactNode
-  title: string
-  subtitle: string
-  description: string
-  isLast?: boolean
+  icon: React.ReactNode;
+  title: string;
+  subtitle: string;
+  description: string;
+  isLast?: boolean;
 }
 
-export function FeatureCard({ icon, title, subtitle, description, isLast = false }: FeatureCardProps) {
+export function FeatureCard({
+  icon,
+  title,
+  subtitle,
+  description,
+  isLast = false,
+}: FeatureCardProps) {
   return (
-    <Box className={`pb-12 lg:px-5 lg:pb-6 border-t lg:border-l lg:border-t-0 border-neutral-300 ${isLast ? 'border-b lg:border-b-0 lg:border-r' : ''} hover:-translate-y-2 transition-all duration-500 opacity-80 max-w-md mx-auto`}>
+    <Box
+      className={`pb-12 lg:px-5 lg:pb-6 border-t lg:border-l lg:border-t-0 border-neutral-300 ${isLast ? "border-b lg:border-b-0 lg:border-r" : ""} hover:-translate-y-2 transition-all duration-500 opacity-80 max-w-md mx-auto`}
+    >
       <Stack direction="vertical" spacing="6">
         <Box className="flex items-start py-12 lg:pb-6 lg:pt-0">{icon}</Box>
         <Stack direction="vertical" spacing="6">
           <Box>
-            <Paragraph size="xs" className="text-neutral-600 uppercase tracking-wide mb-3 font-semibold leading-4">
+            <Paragraph
+              size="xs"
+              className="text-neutral-600 uppercase tracking-wide mb-3 font-semibold leading-4"
+            >
               {subtitle}
             </Paragraph>
-            <Heading size="2xl" element="h3" className="text-neutral-800 mb-3 leading-8">
+            <Heading
+              size="2xl"
+              element="h3"
+              className="text-neutral-800 mb-3 leading-8"
+            >
               {title}
             </Heading>
           </Box>
@@ -29,5 +44,5 @@ export function FeatureCard({ icon, title, subtitle, description, isLast = false
         </Stack>
       </Stack>
     </Box>
-  )
+  );
 }

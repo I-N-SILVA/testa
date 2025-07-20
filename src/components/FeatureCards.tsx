@@ -1,16 +1,23 @@
-import { Container, Section, Heading, Paragraph, Grid, TranslatedText } from "@plyaz/ui"
-import { useTranslations } from "next-intl"
+import {
+  Container,
+  Section,
+  Heading,
+  Paragraph,
+  Grid,
+  TranslatedText,
+} from "@plyaz/ui";
+import { useTranslations } from "next-intl";
 
-import { FeatureCard } from "./FeatureCard"
+import { FeatureCard } from "./FeatureCard";
 import {
   AthleteTokenizationIcon,
   FantasySportsIcon,
   FanEngagementIcon,
   EcosystemIcon,
-} from "./FeatureIcons"
+} from "./icons";
 
 export default function FeaturesSection() {
-  const t = useTranslations("FeatureCards")
+  const t = useTranslations("FeatureCards");
   const features = [
     {
       icon: <AthleteTokenizationIcon />,
@@ -36,17 +43,31 @@ export default function FeaturesSection() {
       title: t("items.ecosystem.title"),
       description: t("items.ecosystem.description"),
     },
-  ]
+  ];
 
   return (
     <Section className="py-20">
       <Container>
         <div className="text-center mb-16">
-          <TranslatedText translationKey="FeatureCards.title" element="p" size="base" weight="semibold" variant="heading" className="uppercase tracking-wide mb-3 text-emerald-700 bg-emerald-50 px-4 py-1 inline-block leading-6" />
-          <Heading size="4xl" element="h2" className="text-gray-900 mb-3 font-semibold">
+          <TranslatedText
+            translationKey="FeatureCards.title"
+            element="p"
+            size="base"
+            weight="semibold"
+            variant="heading"
+            className="uppercase tracking-wide mb-3 text-emerald-700 bg-emerald-50 px-4 py-1 inline-block leading-6"
+          />
+          <Heading
+            size="4xl"
+            element="h2"
+            className="text-gray-900 mb-3 font-semibold"
+          >
             {t("subtitle")}
           </Heading>
-          <Paragraph size="lg" className="text-gray-600 max-w-3xl mx-auto leading-7 font-medium">
+          <Paragraph
+            size="lg"
+            className="text-gray-600 max-w-3xl mx-auto leading-7 font-medium"
+          >
             {t("description")}
           </Paragraph>
         </div>
@@ -65,5 +86,5 @@ export default function FeaturesSection() {
         </Grid>
       </Container>
     </Section>
-  )
+  );
 }

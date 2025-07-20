@@ -7,7 +7,6 @@ export default getRequestConfig(async ({ requestLocale }) => {
   const locale = hasLocale(getSupportedLanguages(), requested)
     ? requested
     : "en";
-  
 
   return {
     locale,
