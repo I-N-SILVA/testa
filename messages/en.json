@@ -1,0 +1,212 @@
+{
+  "EcosystemOverview": {
+    "tag": "ECOSYSTEM",
+    "title": "Empowering all participants in sports",
+    "subtitle": "Join an innovative platform that connects athletes, fans, scouts, agents, and clubs in a unique digital ecosystem. Experience the future of sports networking and unlock new opportunities!",
+    "cta": {
+      "backAthletes": "BACK ATHLETES",
+      "shareSuccess": "SHARE SUCCESS"
+    },
+    "cards": {
+      "fans": {
+        "title": "Fans",
+        "item1": "Get exclusive access to behind-the-scenes content and personal updates",
+        "item2": "Vote on real decisions that shape your favourite athlete’s career",
+        "item3": "Join private video calls and attend VIP-only events",
+        "item4": "Earn rewards for supporting athletes before they become famous",
+        "item5": "Build genuine relationships with the athletes you’ve always admired",
+        "cta": "GET FUNDED"
+      },
+      "athletes": {
+        "title": "Athletes",
+        "item1": "Build your authentic fanbase before you hit the big leagues",
+        "item2": "Get direct support from fans who believe in your potential",
+        "item3": "Make real money from exclusive content and experiences",
+        "item4": "Let fans vote on training camps, sponsors, and career decisions",
+        "item5": "Create lifelong connections with supporters who matter",
+        "cta": "GET FUNDED"
+      },
+      "scoutsAgents": {
+        "title": "Scouts/agents",
+        "item1": "Discover hidden talent before your competition does",
+        "item2": "Track fan engagement to identify marketable athletes early",
+        "item3": "Connect directly with rising stars and their supporter communities",
+        "item4": "Access performance data and fan sentiment analytics",
+        "item5": "Build your roster of tomorrow’s superstars today",
+        "cta": "GET FUNDED"
+      },
+      "club": {
+        "title": "Club",
+        "item1": "Alumni success sharing: 2% of former player earnings for life",
+        "item2": "Revenue from athlete investment tokens for club-developed players",
+        "item3": "Coaching IP monetization: Training methodologies sold as courses",
+        "item4": "Facility revenue sharing: % of athlete earnings from facility usage",
+        "item5": "Sponsorship deal percentage for club athletes",
+        "cta": "GET FUNDED"
+      }
+    }
+  },
+  "FeatureCards": {
+    "title": "FEATURES",
+    "subtitle": "Revolutionary features",
+    "description": "Experience the future of sports investment through our cutting-edge platform.",
+    "items": {
+      "athleteTokenization": {
+        "subtitle": "YOUR TALENT DESERVES RECOGNITION",
+        "title": "Athlete tokenization",
+        "description": "Turn your athletic talent into unique fan experiences. Let scouts and clubs vie for your attention while you build your authentic personal brand and get rewarded for your dedication."
+      },
+      "fantasySports": {
+        "subtitle": "FANTASY POWERED BY REAL RELATIONSHIPS",
+        "title": "Fantasy sports",
+        "description": "Create your fantasy team with athletes you support. Your passion boosts their performance. Join leagues where fandom meets strategy."
+      },
+      "fanEngagement": {
+        "subtitle": "LEVEL UP YOUR FAN STATUS",
+        "title": "Fan engagement",
+        "description": "Take on challenges to show your super fan status. Unlock exclusive content and connect with athletes - Be part of their journey and celebrations."
+      },
+      "ecosystem": {
+        "subtitle": "THE SPORTS WORLD'S BEST-KEPT SECRET",
+        "title": "Plyaz ecosystem",
+        "description": "Join industry pros and super fans to discover how careers are built in sports. Connect with key players where passion meets opportunity."
+      }
+    }
+  },
+  "Footer": {
+    "slogan": "The future of sports. Turn your game into gain.",
+    "sections": {
+      "product": {
+        "title": "Product",
+        "links": {
+          "features": "Features",
+          "ecosystem": "Ecosystem",
+          "docs": "Docs",
+          "signUp": "Sign up"
+        }
+      },
+      "company": {
+        "title": "Company",
+        "links": {
+          "aboutUs": "About us",
+          "blog": "Blog",
+          "contactUs": "Contact us"
+        }
+      },
+      "social": {
+        "title": "Social",
+        "links": {
+          "x": "X",
+          "instagram": "Instagram",
+          "linkedin": "LinkedIn"
+        }
+      }
+    },
+    "legal": {
+      "privacyPolicy": "Privacy policy",
+      "cookiePolicy": "Cookie policy",
+      "termsOfService": "Terms of service"
+    },
+    "copyright": "© 2025 Plyaz. All rights reserved."
+  },
+  "HeroSection": {
+    "title": {
+      "line1": "DISCOVER TALENT.",
+      "line2": "SUPPORT POTENTIAL.",
+      "line3": "CELEBRATE SUCCESS."
+    },
+    "subtitle": "Engage with a new era of sports investment by tokenizing athletes, joining fantasy leagues, and owning exclusive NFTs. Don’t miss out—join today and elevate your sports experience!",
+    "cta": {
+      "primary": "GET ACCESS NOW",
+      "secondary": "LEARN MORE"
+    }
+  },
+  "LanguageSelector": {
+    "label": "Language",
+    "locale": {
+      "en": "English",
+      "es": "Spanish",
+      "fr": "French",
+      "it": "Italian",
+      "pt-PT": "Portuguese (Portugal)",
+      "pt-BR": "Portuguese (Brazil)"
+    }
+  },
+  "LatestBlogs": {
+    "title": "Latest Blogs",
+    "cta": {
+      "loadMore": "LOAD MORE"
+    }
+  },
+  "NavigationHeader": {
+    "links": {
+      "features": "FEATURES",
+      "ecosystem": "ECOSYSTEM",
+      "docs": "DOCS",
+      "about": "ABOUT",
+      "blog": "BLOG"
+    },
+    "actions": {
+      "signUp": "SIGN UP"
+    }
+  },
+  "OurMission": {
+    "title": "Our mission",
+    "statements": {
+      "1": "Breaking down the walls between athletes and fans. Forever.",
+      "2": "Where passion meets opportunity, and dedication gets rewarded.",
+      "3": "No more watching from the sidelines; become part of their journey.",
+      "4": "Your support becomes their success, and their success becomes yours."
+    }
+  },
+  "OurPartners": {
+    "title": "Our Partners"
+  },
+  "OurTeam": {
+    "title": "Our Team",
+    "ian": {
+      "name": "Ian Silva",
+      "role": "CEO"
+    },
+    "redeemer": {
+      "name": "Redeemer Pace",
+      "role": "CTO"
+    },
+    "emmanuel": {
+      "name": "Emmanuel Darko",
+      "role": "CCO"
+    },
+    "julian": {
+      "name": "Julian Vella",
+      "role": "CPO"
+    },
+    "hiroe": {
+      "name": "Hiroe Ito",
+      "role": "Head of Design"
+    },
+    "sebastien": {
+      "name": "Sebastien Guibert",
+      "role": "Backend Engineer"
+    },
+    "martin": {
+      "name": "Martín Marchionni",
+      "role": "Frontend engineer"
+    },
+    "ryan": {
+      "name": "Ryan Irani",
+      "role": "Frontend engineer"
+    },
+    "muhammad": {
+      "name": "Muhammad Usman",
+      "role": "Full stack engineer"
+    },
+    "kasra": {
+      "name": "Kasra Nemati",
+      "role": "Blockchain developer"
+    },
+    "bernard": {
+      "name": "Bernard Simpson",
+      "role": "Blockchain developer"
+    }
+  }
+}

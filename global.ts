@@ -1,10 +1,10 @@
-import type { resources } from "@plyaz/translations";
-
 import type { routing } from "src/i18n/routing";
+
+import type messages from "./messages/en.json";
 
 declare module "next-intl" {
   interface AppConfig {
     Locale: (typeof routing.locales)[number];
-    Messages: (typeof resources)["en"];
+    Messages: typeof messages;
   }
 }

@@ -9,12 +9,10 @@
     "moduleResolution": "bundler",
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/app/*"
-      ]
+      "@/*": ["./src/app/*"]
     },
     "plugins": [
-            {
+      {
         "name": "next"
       }
     ]
@@ -23,12 +21,8 @@
     "./src/**/*",
     "./tests/**/*",
     ".next/types/**/*.ts",
-    "*.ts"
+    "*.ts",
+    "./messages/**/*.json"
   ],
-  "exclude": [
-    "node_modules",
-    "dist",
-    "build",
-    "coverage"
-  ]
+  "exclude": ["node_modules", "dist", "build", "coverage"]
 }
