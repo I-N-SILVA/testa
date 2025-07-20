@@ -1,6 +1,7 @@
 import { getRequestConfig } from "next-intl/server";
 import { hasLocale } from "next-intl";
-import { getSupportedLanguages, timeZone } from "@plyaz/translations";
+import { getSupportedLanguages } from "@plyaz/translations";
+import { TIMEZONE } from "@plyaz/config";
 
 export default getRequestConfig(async ({ requestLocale }) => {
   const requested = await requestLocale;
@@ -10,7 +11,7 @@ export default getRequestConfig(async ({ requestLocale }) => {
 
   return {
     locale,
-    timeZone,
+    timeZone: TIMEZONE,
     messages: (await import(`../../messages/${locale}.json`)).default,
   };
 });
