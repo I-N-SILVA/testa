@@ -8,9 +8,6 @@ importers:
 
   .:
     dependencies:
-      '@plyaz/config':
-        specifier: ^1.0.1
-        version: 1.0.1(next@15.3.3(@babel/core@7.28.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@plyaz/devtools':
         specifier: ^1.7.4
         version: 1.7.4(5b034512a1a7f8da94ca35b38c69e5b6)
@@ -885,21 +882,6 @@ packages:
   '@pkgr/core@0.2.9':
     resolution: {integrity: sha512-QNqXyfVS2wm9hweSYD2O7F0G06uurj9kZ96TRQE5Y9hU7+tgdZwIkbAKc5Ocy1HxEY2kuDQa6cQ1WRs/O5LFKA==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
-
-  '@plyaz/config@1.0.1':
-    resolution: {integrity: sha512-EvbSAMebpMUt0pf4XxjKBI59iHWt1Tt4FguRg/EADcEUM3KSKSRT8ypUiIg+s53ficoQhb1u4c8Bt5nw3aqAOQ==}
-    engines: {node: '>=22.4.0', pnpm: '>=8.0.0'}
-    peerDependencies:
-      next: '*'
-      react: '*'
-      react-dom: '*'
-    peerDependenciesMeta:
-      next:
-        optional: true
-      react:
-        optional: true
-      react-dom:
-        optional: true
 
   '@plyaz/devtools@1.7.4':
     resolution: {integrity: sha512-+N+OknGBNRw2tyXVvQ8ckpObyOPJY+87EzWlZAzftzAF6//tppXXbYlKOQVptEzHfMueo3TrhFRaFHSlgtE78Q==}
@@ -5686,12 +5668,6 @@ snapshots:
     optional: true
 
   '@pkgr/core@0.2.9': {}
-
-  '@plyaz/config@1.0.1(next@15.3.3(@babel/core@7.28.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react@19.1.0)':
-    optionalDependencies:
-      next: 15.3.3(@babel/core@7.28.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
-      react: 19.1.0
-      react-dom: 19.1.0(react@19.1.0)
 
   '@plyaz/devtools@1.7.4(5b034512a1a7f8da94ca35b38c69e5b6)':
     dependencies:
