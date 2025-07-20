@@ -31,7 +31,7 @@ import { routing } from "src/i18n/routing";
  * @returns A Select component with locale options
  */
 export default function LanguageSelectorWrapper() {
-  const t = useTranslations("components.LanguageSelector");
+  const t = useTranslations("LanguageSelector");
   const locale = useLocale();
   const router = useRouter();
   const pathname = usePathname();
@@ -54,12 +54,7 @@ export default function LanguageSelectorWrapper() {
       locales={routing.locales as string[]}
       onChange={handleChange}
       getLabel={(loc: string) =>
-        t(
-          `locale.${loc}` as NamespaceKeys<
-            typeof t,
-            "components.LanguageSelector"
-          >,
-        )
+        t(`locale.${loc}` as NamespaceKeys<typeof t, "LanguageSelector">)
       }
       disabled={isPending}
     />
