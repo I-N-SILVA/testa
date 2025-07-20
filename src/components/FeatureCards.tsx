@@ -75,7 +75,7 @@ export default function FeaturesSection() {
         <Grid className="mt-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
           {features.map((feature, index) => (
             <FeatureCard
-              key={index}
+              key={feature.title}
               icon={feature.icon}
               subtitle={feature.subtitle}
               title={feature.title}

@@ -18,7 +18,14 @@ export function FeatureCard({
 }: FeatureCardProps) {
   return (
     <Box
-      className={`pb-12 lg:px-5 lg:pb-6 border-t lg:border-l lg:border-t-0 border-neutral-300 ${isLast ? "border-b lg:border-b-0 lg:border-r" : ""} hover:-translate-y-2 transition-all duration-500 opacity-80 max-w-md mx-auto`}
+      className={[
+        "pb-12 lg:px-5 lg:pb-6",
+        "max-w-md mx-auto",
+        "border-t lg:border-l lg:border-t-0 border-neutral-300",
+        isLast ? "border-b lg:border-b-0 lg:border-r" : "",
+        "hover:-translate-y-2 transition-all duration-500",
+        "opacity-80"
+      ].join(" ")}
     >
       <Stack direction="vertical" spacing="6">
         <Box className="flex items-start py-12 lg:pb-6 lg:pt-0">{icon}</Box>
