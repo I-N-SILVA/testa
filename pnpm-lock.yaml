@@ -20,6 +20,9 @@ importers:
       '@plyaz/ui':
         specifier: ^0.5.4
         version: 0.5.4(b709f6d924d5fae10f9cf53e358a92c6)
+      clsx:
+        specifier: ^2.1.1
+        version: 2.1.1
       next:
         specifier: 15.3.3
         version: 15.3.3(@babel/core@7.28.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)

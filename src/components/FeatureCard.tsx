@@ -1,5 +1,6 @@
 import type React from "react";
 import { Box, Heading, Paragraph, Stack } from "@plyaz/ui";
+import clsx from "clsx";
 
 interface FeatureCardProps {
   icon: React.ReactNode;
@@ -18,14 +19,16 @@ export function FeatureCard({
 }: FeatureCardProps) {
   return (
     <Box
-      className={[
+      className={clsx(
         "pb-12 lg:px-5 lg:pb-6",
         "max-w-md mx-auto",
         "border-t lg:border-l lg:border-t-0 border-neutral-300",
-        isLast ? "border-b lg:border-b-0 lg:border-r" : "",
+        {
+          "border-b lg:border-b-0 lg:border-r": isLast,
+        },
         "hover:-translate-y-2 transition-all duration-500",
         "opacity-80"
-      ].join(" ")}
+      )}
     >
       <Stack direction="vertical" spacing="6">
         <Box className="flex items-start py-12 lg:pb-6 lg:pt-0">{icon}</Box>
