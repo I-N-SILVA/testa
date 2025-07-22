@@ -15,5 +15,6 @@ jobs:
   security:
     uses: Plyaz-Official/devtools/.github/workflows/security.yml@main
     with:
+      dependency_review: true
       skip_osv_scan: true
     secrets: inherit
