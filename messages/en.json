@@ -46,6 +46,7 @@
       }
     }
   },
+
   "FeatureCards": {
     "title": "FEATURES",
     "subtitle": "Revolutionary features",
@@ -115,7 +116,11 @@
       "line2": "SUPPORT POTENTIAL.",
       "line3": "CELEBRATE SUCCESS."
     },
-    "subtitle": "Engage with a new era of sports investment by tokenizing athletes, joining fantasy leagues, and owning exclusive NFTs. Don’t miss out—join today and elevate your sports experience!",
+    "subtitle": {
+      "line1": "Engage with a new era of sports investment by tokenizing athletes,",
+      "line2": "joining fantasy leagues, and owning exclusive NFTs.",
+      "line3": "Don't miss out—join today and elevate your sports experience!"
+    },
     "cta": {
       "primary": "GET ACCESS NOW",
       "secondary": "LEARN MORE"

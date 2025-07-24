@@ -7,7 +7,6 @@ import { getMessages } from "next-intl/server";
 
 import Providers from "src/components/Providers";
 import { routing } from "src/i18n/routing";
-import NavigationHeader from "src/components/NavigationHeader";
 import Footer from "src/components/Footer";
 
 export const metadata: Metadata = {
@@ -31,7 +30,10 @@ export default async function RootLayout({
     <html lang={locale}>
       <body>
         <Providers messages={messages} locale={locale}>
-          <NavigationHeader />
+          {/*  here we will work on next ticket
+          <NavigationHeader /> 
+          
+          */}
           {children}
           <Footer />
         </Providers>

@@ -46,33 +46,33 @@ export default function FeaturesSection() {
   ];
 
   return (
-    <Section className="py-20">
+    <Section className="py-20" id="features">
       <Container>
-        <div className="text-center mb-16">
+        <div className="mb-16 text-center">
           <TranslatedText
             translationKey="FeatureCards.title"
             element="p"
             size="base"
             weight="semibold"
             variant="heading"
-            className="uppercase tracking-wide mb-3 text-emerald-700 bg-emerald-50 px-4 py-1 inline-block leading-6"
+            className="inline-block bg-emerald-50 mb-3 px-4 py-1 text-emerald-700 uppercase leading-6 tracking-wide"
           />
           <Heading
             size="4xl"
             element="h2"
-            className="text-gray-900 mb-3 font-semibold"
+            className="mb-3 font-semibold text-gray-900"
           >
             {t("subtitle")}
           </Heading>
           <Paragraph
             size="lg"
-            className="text-gray-600 max-w-3xl mx-auto leading-7 font-medium"
+            className="mx-auto max-w-3xl font-medium text-gray-600 leading-7"
           >
             {t("description")}
           </Paragraph>
         </div>
 
-        <Grid className="mt-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+        <Grid className="grid-cols-1 md:grid-cols-2 lg:grid-cols-4 mt-16">
           {features.map((feature, index) => (
             <FeatureCard
               key={feature.title}
