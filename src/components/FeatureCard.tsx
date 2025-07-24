@@ -27,7 +27,7 @@ export function FeatureCard({
           "border-b lg:border-b-0 lg:border-r": isLast,
         },
         "hover:-translate-y-2 transition-all duration-500",
-        "opacity-80"
+        "opacity-80",
       )}
     >
       <Stack direction="vertical" spacing="6">
