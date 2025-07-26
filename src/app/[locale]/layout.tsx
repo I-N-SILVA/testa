@@ -30,10 +30,6 @@ export default async function RootLayout({
     <html lang={locale}>
       <body>
         <Providers messages={messages} locale={locale}>
-          {/*  here we will work on next ticket
-          <NavigationHeader /> 
-          
-          */}
           {children}
           <Footer />
         </Providers>

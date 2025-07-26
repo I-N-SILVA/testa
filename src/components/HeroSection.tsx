@@ -4,6 +4,8 @@ import React from "react";
 
 import { cn } from "src/utils/cn";
 
+import NavigationHeader from "./NavigationHeader";
+
 const HeroSection = () => {
   const t = useTranslations("HeroSection");
 
@@ -21,7 +23,7 @@ const HeroSection = () => {
         <source src="web_hero.webm" type="video/mp4" />
         Your browser does not support HTML5 video.
       </video>
-
+      <NavigationHeader />
       <Flex
         className="top-0 left-0 z-10 absolute bg-gradient-to-b from-31% from-white/10 via-70% via-white/95 to-100% to-white px-0.5 w-full h-full"
         direction="col"
