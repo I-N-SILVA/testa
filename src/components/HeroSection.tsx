@@ -19,8 +19,8 @@ const HeroSection = () => {
         className="z-0 relative w-full h-full object-cover"
         poster="hero_image.png"
       >
-        <source src="mobile_hero.webm" media="(width <= 1024px)" />
-        <source src="web_hero.webm" type="video/mp4" />
+        <source src="mobile_hero.mp4" media="(width <= 1024px)" />
+        <source src="web_hero.mp4" type="video/mp4" />
         Your browser does not support HTML5 video.
       </video>
       <NavigationHeader />
