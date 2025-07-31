@@ -215,25 +215,87 @@
     }
   },
   "CookiePolicy": {
-  "title": "Cookie policy",
-  "lastUpdated": "Last Updated:",
-  "sections": {
-    "whatAreCookies": {
-      "title": "What Are Cookies?",
-      "body": "Cookies are small text files that are stored on your device when you visit our website. They help us improve your browsing experience by remembering your preferences, analyzing traffic, and enabling certain functionalities."
-    },
-    "howWeUseCookies": {
-      "title": "How We Use Cookies",
-      "body": "Essential Cookies :\n These are necessary for the website to function properly. For example, they enable you to log in securely or access restricted areas.\nAnalytics Cookies :\n These help us understand how visitors interact with our site, such as which pages are most visited and any error messages received.\nMarketing Cookies :\n These track your activity across websites to deliver personalized ads based on your interests.\nPreference Cookies :\n These remember your settings, such as language preferences or region."
-    },
-    "typesOfCookies": {
-      "title": "Types of Cookies We Use",
-      "body": "Session Cookies :\n Temporary cookies deleted after you close your browser.\nPersistent Cookies :\n Stored on your device for a set period to remember your preferences.\nManaging Cookies :\n You can control or disable cookies through your browser settings. However, disabling cookies may limit your ability to use certain features of our website.\nMarketing Cookies :\n These track your activity across websites to deliver personalized ads based on your interests.\nThird-Party Cookies :\n We may allow third-party services (e.g., Google Analytics, advertising partners) to place cookies on your device. These cookies are subject to their respective privacy policies."
-    },
-    "contact": {
-      "title": "Contact us",
-      "body": "If you have questions about our Cookie Policy, please contact us at:\nEmail: help@plyaz.co.uk\nWebsite: plyaz.co.uk"
+    "title": "Cookie policy",
+    "lastUpdated": "Last Updated:",
+    "sections": {
+      "whatAreCookies": {
+        "title": "What Are Cookies?",
+        "body": "Cookies are small text files that are stored on your device when you visit our website. They help us improve your browsing experience by remembering your preferences, analyzing traffic, and enabling certain functionalities."
+      },
+      "howWeUseCookies": {
+        "title": "How We Use Cookies",
+        "body": "Essential Cookies :\n These are necessary for the website to function properly. For example, they enable you to log in securely or access restricted areas.\nAnalytics Cookies :\n These help us understand how visitors interact with our site, such as which pages are most visited and any error messages received.\nMarketing Cookies :\n These track your activity across websites to deliver personalized ads based on your interests.\nPreference Cookies :\n These remember your settings, such as language preferences or region."
+      },
+      "typesOfCookies": {
+        "title": "Types of Cookies We Use",
+        "body": "Session Cookies :\n Temporary cookies deleted after you close your browser.\nPersistent Cookies :\n Stored on your device for a set period to remember your preferences.\nManaging Cookies :\n You can control or disable cookies through your browser settings. However, disabling cookies may limit your ability to use certain features of our website.\nMarketing Cookies :\n These track your activity across websites to deliver personalized ads based on your interests.\nThird-Party Cookies :\n We may allow third-party services (e.g., Google Analytics, advertising partners) to place cookies on your device. These cookies are subject to their respective privacy policies."
+      },
+      "contact": {
+        "title": "Contact us",
+        "body": "If you have questions about our Cookie Policy, please contact us at:\nEmail: help@plyaz.co.uk\nWebsite: plyaz.co.uk"
+      }
+    }
+  },
+  "TermsOfServices": {
+    "title": " Terms of Service",
+    "lastUpdated": "Last Updated:",
+    "sections": {
+      "Acceptance of Terms": {
+        "title": "1. Acceptance of Terms",
+        "body": " By accessing or using the Plyaz platform (\"the Platform\"), you agree to be bound by these Terms and Conditions. If you do not agree, please refrain from using the Platform."
+      },
+      "Eligibility": {
+        "title": "2. Eligibility",
+        "body": " You must be at least 18 years old or have parental consent to use the Platform.\nBy using Plyaz, you represent that you meet these eligibility requirements."
+      },
+      "Account Registration": {
+        "title": "3. Account Registration",
+        "body": " To access certain features of the Platform, you may need to create an account.You are responsible for maintaining the confidentiality of your login credentials and ensuring all activities under your account comply with these Terms."
+      },
+      "Intellectual Property": {
+        "title": "4. Intellectual Property",
+        "body": "All content on the Platform, including text, graphics, logos, and software, is the property of Plyaz or its licensors and is protected by intellectual property laws. Unauthorized use of any content is strictly prohibited."
+      },
+      "User Conduct": {
+        "title": "5. User Conduct",
+        "body": " You agree to use the Platform lawfully and responsibly.\nProhibited activities include:\n Violating any applicable laws or regulations.\n Engaging in fraudulent or malicious behavior.\nAttempting to disrupt the functionality or security of the Platform."
+      },
+      "Transactions and Payments": {
+        "title": "6. Transactions and Payments",
+        "body": "All transactions conducted on the Platform are final unless otherwise stated.Payments made via cryptocurrency or other methods are non-refundable unless explicitly permitted by Plyaz. You are responsible for ensuring the accuracy of payment details provided."
+      },
+      "Privacy": {
+        "title": "7. Privacy",
+        "body": "Your use of the Platform is also governed by our Privacy Policy , which explains how we collect, use, and protect your personal information."
+      },
+      "Disclaimers": {
+        "title": "8. Disclaimers",
+        "body": " The Platform is provided \"as is\" without warranties of any kind, either express or implied. Plyaz does not guarantee uninterrupted or error-free operation of the Platform. "
+      },
+      "Limitation of Liability": {
+        "title": "9. Limitation of Liability",
+        "body": "Plyaz shall not be liable for any direct, indirect, incidental, or consequential damages arising out of your use of the Platform."
+      },
+      "Indemnification": {
+        "title": "10. Indemnification",
+        "body": "You agree to indemnify and hold Plyaz harmless from any claims, damages, or expenses resulting from your breach of these Terms."
+      },
+      "Modifications": {
+        "title": "11. Modifications",
+        "body": "Plyaz reserves the right to modify these Terms at any time. Continued use of the Platform constitutes acceptance of the updated Terms."
+      },
+      "Governing Law": {
+        "title": "12. Governing Law",
+        "body": " These Terms are governed by the laws of England and Wales.\nAny disputes shall be resolved exclusively in the courts of England and Wales."
+      },
+      "Termination": {
+        "title": "13. Termination",
+        "body": "Plyaz may terminate or suspend your access to the Platform at any time, without prior notice, for any reason, including violations of these Terms."
+      },
+      "contact": {
+        "title": "Contact us",
+        "body": "If you have questions about these Terms and policies, please contact us at:\nEmail: help@plyaz.co.uk\nWebsite: plyaz.co.uk"
+      }
     }
   }
-}
 }

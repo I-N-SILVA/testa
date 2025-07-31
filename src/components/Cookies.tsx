@@ -10,6 +10,7 @@ import { SectionBlock } from "./SectionBlock";
 
 export const Cookies = () => {
   const { t } = useTranslation();
+  
   const cookies: PolicySection[] = [
     {
       title: t("CookiePolicy.sections.whatAreCookies.title"),
@@ -28,6 +29,7 @@ export const Cookies = () => {
       body: t("CookiePolicy.sections.contact.body"),
     },
   ];
+  
   return (
     <Section className="mx-auto px-8 lg:px-0 py-16 lg:py-28 w-auto lg:max-w-[768px] h-full">
       <Flex justify="center" align="center" className="gap-12" direction="col">
