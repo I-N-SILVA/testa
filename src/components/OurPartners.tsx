@@ -10,7 +10,7 @@ import ArdeUniversity from "@/public/ARDEN_university_logo.svg";
 const OurPartners = () => {
   const t = useTranslations("OurPartners");
   return (
-    <Section>
+    <Section className="pt-16 lg:pt-28">
       <Container className="w-full">
         <Flex
           justify="center"
@@ -18,7 +18,11 @@ const OurPartners = () => {
           direction="col"
           className="gap-8 lg:gap-16"
         >
-          <Heading element="h3" size="3xl" className="font-medium lg:text-5xl">
+          <Heading
+            element="h3"
+            size="3xl"
+            className="font-semibold text-foreground lg:text-5xl"
+          >
             {t("title")}
           </Heading>
 

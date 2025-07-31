@@ -3,7 +3,7 @@
 /*
 We’re importing CSS classes from the @plyaz/ui library.
 */
-@import "../node_modules/@plyaz/ui/dist/ui.css"; 
+@import "../node_modules/@plyaz/ui/dist/ui.css";
 @import "tailwindcss";
 @import "./animation.css";
 

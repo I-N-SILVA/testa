@@ -1,4 +1,2 @@
-export interface PolicySection {
-  title: string;
-  body: string;
-}
+export type * from "./team.types";
+export type * from "./policy.types";

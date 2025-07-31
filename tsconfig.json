@@ -12,7 +12,8 @@
       "@/*": ["./src/app/*"],
       "@/components" : ["./src/components"],
       "@/public/*" : ["./public/assets/*"],
-      "@/types" : ["./src/types"],
+      "@/types": ["./src/types"],
+      "@/constants" : ["./src/constants"]
     },
     "plugins": [
       {
