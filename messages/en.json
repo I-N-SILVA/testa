@@ -213,5 +213,27 @@
       "name": "Bernard Simpson",
       "role": "Blockchain developer"
     }
+  },
+  "CookiePolicy": {
+  "title": "Cookie policy",
+  "lastUpdated": "Last Updated:",
+  "sections": {
+    "whatAreCookies": {
+      "title": "What Are Cookies?",
+      "body": "Cookies are small text files that are stored on your device when you visit our website. They help us improve your browsing experience by remembering your preferences, analyzing traffic, and enabling certain functionalities."
+    },
+    "howWeUseCookies": {
+      "title": "How We Use Cookies",
+      "body": "Essential Cookies :\n These are necessary for the website to function properly. For example, they enable you to log in securely or access restricted areas.\nAnalytics Cookies :\n These help us understand how visitors interact with our site, such as which pages are most visited and any error messages received.\nMarketing Cookies :\n These track your activity across websites to deliver personalized ads based on your interests.\nPreference Cookies :\n These remember your settings, such as language preferences or region."
+    },
+    "typesOfCookies": {
+      "title": "Types of Cookies We Use",
+      "body": "Session Cookies :\n Temporary cookies deleted after you close your browser.\nPersistent Cookies :\n Stored on your device for a set period to remember your preferences.\nManaging Cookies :\n You can control or disable cookies through your browser settings. However, disabling cookies may limit your ability to use certain features of our website.\nMarketing Cookies :\n These track your activity across websites to deliver personalized ads based on your interests.\nThird-Party Cookies :\n We may allow third-party services (e.g., Google Analytics, advertising partners) to place cookies on your device. These cookies are subject to their respective privacy policies."
+    },
+    "contact": {
+      "title": "Contact us",
+      "body": "If you have questions about our Cookie Policy, please contact us at:\nEmail: help@plyaz.co.uk\nWebsite: plyaz.co.uk"
+    }
   }
+}
 }
