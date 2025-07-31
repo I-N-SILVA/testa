@@ -37,8 +37,8 @@ export const MobileNavigation = ({
     <Box
       element="header"
       className={cn(
-        "lg:hidden block top-0 left-0 z-30 fixed w-full h-dvh",
-        isOpenMenu ? "bg-primary" : "bg-transparent",
+        "lg:hidden block top-0 left-0 z-30 fixed w-full",
+        isOpenMenu ? "bg-primary h-dvh" : "bg-transparent",
       )}
     >
       <Box className="top-5 right-0 fixed px-0 w-full h-14">

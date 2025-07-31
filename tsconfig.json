@@ -10,10 +10,9 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/app/*"],
-      "@/components" : ["./src/components"],
-      "@/public/*" : ["./public/assets/*"],
-      "@/types": ["./src/types"],
-      "@/constants" : ["./src/constants"]
+      "@/components": ["./src/components"],
+      "@/public/*": ["./public/assets/*"],
+      "@/types": ["./src/types"]
     },
     "plugins": [
       {

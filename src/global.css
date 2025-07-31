@@ -166,3 +166,16 @@ We’re importing CSS classes from the @plyaz/ui library.
     @apply bg-background font-general text-foreground;
   }
 }
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+
+
