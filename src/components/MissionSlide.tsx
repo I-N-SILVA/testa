@@ -2,7 +2,7 @@ import { useTranslation } from "@plyaz/translations/frontend";
 import { Box, Paragraph, Section } from "@plyaz/ui";
 import { useRef } from "react";
 
-import { type Mission } from "@/constants";
+import { type Mission } from "@/types";
 
 export const MissionSlide = ({ id, title }: Mission) => {
   const { t } = useTranslation();
@@ -21,7 +21,7 @@ export const MissionSlide = ({ id, title }: Mission) => {
       >
         <Box
           className={
-            "absolute flex justify-center items-center bg-[url('public/assets/svgs/our-mission.svg')] bg-contain bg-no-repeat w-[340px] h-[340px]"
+            "absolute flex justify-center items-center bg-[url('/assets/svgs/our-mission.svg')] bg-contain bg-no-repeat w-[340px] h-[340px]"
           }
         >
           <Paragraph

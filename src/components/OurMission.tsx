@@ -5,22 +5,9 @@ import { useRef } from "react";
 import { Box, Flex, Heading } from "@plyaz/ui";
 import { useTranslation } from "@plyaz/translations/frontend";
 
+import { MISSIONS } from "@/constants";
+
 import { MissionSlide } from "./MissionSlide";
-
-export interface Mission {
-  id: number;
-  title: string;
-}
-
-export const MISSIONS: Mission[] = [
-  {
-    id: 1,
-    title: "OurMission.statements.1",
-  },
-  { id: 2, title: "OurMission.statements.2" },
-  { id: 3, title: "OurMission.statements.3" },
-  { id: 4, title: "OurMission.statements.4" },
-];
 
 const OurMission = () => {
   const ref = useRef(null);

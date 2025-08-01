@@ -22,7 +22,7 @@ const OurTeam = () => {
       >
         {t("OurTeam.title")}
       </Heading>
-      <Container className="flex lg:bg-[url('public/assets/svgs/football-field-emerald.svg')] lg:bg-contain lg:bg-no-repeat lg:bg-center px-0 h-full min-h-full">
+      <Container className="flex lg:bg-[url('/assets/svgs/football-field-emerald.svg')] lg:bg-contain lg:bg-no-repeat lg:bg-center px-0 h-full min-h-full">
         <Flex
           className="w-full"
           direction="col"

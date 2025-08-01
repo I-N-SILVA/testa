@@ -21,7 +21,7 @@ export const Member = ({ id, name, role }: TeamMembers) => {
       <Flex
         justify="center"
         align="center"
-        className="bg-[url('public/assets/svgs/t-shirt.svg')] bg-cover bg-no-repeat bg-center px-0 w-[80px] h-[80px] text-primary-foreground"
+        className="bg-[url('/assets/svgs/t-shirt.svg')] bg-cover bg-no-repeat bg-center px-0 w-[80px] h-[80px] text-primary-foreground"
       >
         <Paragraph size="lg" className="mb-3 text-primary text-3xl">
           {id}
