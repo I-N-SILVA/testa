@@ -10,7 +10,7 @@ const HeroSection = () => {
   const t = useTranslations("HeroSection");
 
   return (
-    <Section className="p-0 w-full h-dvh">
+    <Section className="relative p-0 w-full h-dvh">
       <video
         autoPlay
         muted
