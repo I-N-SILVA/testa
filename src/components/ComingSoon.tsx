@@ -35,17 +35,14 @@ export function ComingSoon(): React.ReactElement {
             size="4xl"
             className="font-general font-bold text-primary-foreground uppercase mb-6"
           >
-            {t("tagline", "The Future of Sports in Web3")}
+            {t("tagline")}
           </Heading>
 
           <Paragraph
             size="lg"
             className="font-general text-secondary-foreground max-w-2xl mx-auto mb-4"
           >
-            {t(
-              "description",
-              "Our platform is currently in development. A new experience is coming soon.",
-            )}
+            {t("description")}
           </Paragraph>
 
           <Box>
@@ -53,7 +50,7 @@ export function ComingSoon(): React.ReactElement {
               size="base"
               className="font-general text-tertiary-foreground"
             >
-              {t("stayTuned", "Stay tuned for updates")}
+              {t("stayTuned")}
             </Paragraph>
           </Box>
         </Container>
