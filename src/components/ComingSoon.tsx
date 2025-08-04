@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import { useTranslations } from "next-intl";
 import { Box, Container, Flex, Heading, Paragraph } from "@plyaz/ui";
+
 import PlyazLogo from "@/public/svgs/plyaz-logo-full-light-mode.svg";
 
 export function ComingSoon(): React.ReactElement {
