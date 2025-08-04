@@ -1,6 +1,7 @@
 import { type Metadata } from "next";
 import React from "react";
 import "../../global.css";
+import { Analytics } from '@vercel/analytics/next';
 import { notFound } from "next/navigation";
 import { hasLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -31,6 +32,7 @@ export default async function RootLayout({
       <body>
         <Providers messages={messages} locale={locale}>
           {children}
+          <Analytics />
           <Footer />
         </Providers>
       </body>
