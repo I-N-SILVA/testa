@@ -47,6 +47,12 @@
     }
   },
 
+  "ComingSoon": {
+    "tagline": "The Future of Sports in Web3",
+    "description": "Our platform is currently in development. A new experience is coming soon.",
+    "stayTuned": "Stay tuned for updates"
+  },
+
   "FeatureCards": {
     "title": "FEATURES",
     "subtitle": "Revolutionary features",

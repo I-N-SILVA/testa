@@ -1,7 +1,7 @@
 import { type Metadata } from "next";
 import React from "react";
 import "../../global.css";
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from "@vercel/analytics/next";
 import { notFound } from "next/navigation";
 import { hasLocale } from "next-intl";
 import { getMessages } from "next-intl/server";
