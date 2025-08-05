@@ -1,0 +1,23 @@
+# Robots.txt for Plyaz Landing Page
+# https://plyaz.net
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://plyaz.net/sitemap.xml
+
+# Crawl delay (optional - remove if not needed)
+Crawl-delay: 1
+
+# Block access to sensitive files
+Disallow: /api/
+Disallow: /_next/
+Disallow: /_vercel/
+Disallow: /admin/
+Disallow: /.well-known/
+
+# Block access to development files
+Disallow: *.json$
+Disallow: /*.env$
+Disallow: /node_modules/

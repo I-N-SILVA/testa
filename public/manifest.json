@@ -1,0 +1,29 @@
+{
+  "name": "Plyaz - The Future of Sports Investment",
+  "short_name": "Plyaz",
+  "description": "Revolutionary sports investment platform connecting fans with talent through blockchain technology.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#059669",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "48x48",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["sports", "finance", "entertainment"],
+  "lang": "en-US"
+}
