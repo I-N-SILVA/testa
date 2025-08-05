@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { motion } from "motion/react";
 
 import PlyazMode from "@/public/svgs/plyaz-icon-light-mode.svg";
 import PlyazLogo from "@/public/svgs/plyaz-logo-full-light-mode.svg";
@@ -25,53 +26,125 @@ const NavigationHeader = () => {
     { label: t("links.blog"), href: "#blogs" },
   ];
 
+  const navVariants = {
+    hidden: { opacity: 0, y: -20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { 
+        duration: 0.6, 
+        ease: "easeOut",
+        staggerChildren: 0.1,
+        delayChildren: 0.2
+      }
+    }
+  };
+
+  const logoVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.5, ease: "easeOut" }
+    }
+  };
+
+  const linkVariants = {
+    hidden: { opacity: 0, y: -10 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.4, ease: "easeOut" }
+    }
+  };
+
+  const buttonVariants = {
+    hidden: { opacity: 0, scale: 0.9 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.5, ease: "easeOut" }
+    }
+  };
+
   return (
     <>
-      <Container
-        element="header"
-        className="hidden lg:block top-5 left-6/12 z-20 fixed backdrop-blur-[20px] px-0 xl:w-full h-14 -translate-x-1/2 -translate-y-0 bg-accent-foreground"
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={navVariants}
       >
-        <Flex>
-          <Flex
-            justify="center"
-            align="center"
-            className="border border-strong border-solid w-14 h-14"
-          >
-            <Image alt="Plyaz mode" src={PlyazMode} />
-          </Flex>
-          <Box>
+        <Container
+          element="header"
+          className="hidden lg:block top-5 left-6/12 z-20 fixed backdrop-blur-[20px] px-0 xl:w-full h-14 -translate-x-1/2 -translate-y-0 bg-accent-foreground"
+        >
+          <Flex>
+            <motion.div
+              variants={logoVariants}
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            >
+              <Flex
+                justify="center"
+                align="center"
+                className="border border-strong border-solid w-14 h-14 cursor-pointer"
+              >
+                <Image alt="Plyaz mode" src={PlyazMode} />
+              </Flex>
+            </motion.div>
+            
+            <motion.div variants={logoVariants}>
+              <Box>
+                <Flex
+                  justify="center"
+                  align="center"
+                  className="border border-strong border-l-0 border-solid w-[187px] h-14"
+                >
+                  <Image alt="Plyaz Logo" src={PlyazLogo} />
+                </Flex>
+              </Box>
+            </motion.div>
+            
             <Flex
               justify="center"
               align="center"
-              className="border border-strong border-l-0 border-solid w-[187px] h-14"
+              gap="8"
+              className="flex-1 px-7.5 border-y border-y-strong font-medium text-base uppercase"
             >
-              <Image alt="Plyaz Logo" src={PlyazLogo} />
+              {navigationLinks.map((item, index) => (
+                <motion.div
+                  key={item.label}
+                  variants={linkVariants}
+                  whileHover={{ y: -2, scale: 1.05 }}
+                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                >
+                  <Link
+                    href={item.href}
+                    className="px-3 text-primary-foreground visited:text-primary-foreground hover:text-emerald-600 transition-colors duration-300 relative group"
+                  >
+                    {item.label}
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-600 group-hover:w-full transition-all duration-300" />
+                  </Link>
+                </motion.div>
+              ))}
             </Flex>
-          </Box>
-          <Flex
-            justify="center"
-            align="center"
-            gap="8"
-            className="flex-1 px-7.5 border-y border-y-strong font-medium text-base uppercase"
-          >
-            {navigationLinks.map((item) => (
-              <Link
-                key={item.label}
-                href={item.href}
-                className="px-3 text-primary-foreground visited:text-primary-foreground"
+            
+            <motion.div
+              variants={buttonVariants}
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            >
+              <Button
+                variant={"secondary"}
+                className="p-6 rounded-none h-14 max-h-full font-medium text-base uppercase text-accent-foreground hover:bg-emerald-600 hover:text-white transition-all duration-300"
               >
-                {item.label}
-              </Link>
-            ))}
+                {t("actions.signUp")}
+              </Button>
+            </motion.div>
           </Flex>
-          <Button
-            variant={"secondary"}
-            className="p-6 rounded-none h-14 max-h-full font-medium text-base uppercase text-accent-foreground"
-          >
-            {t("actions.signUp")}
-          </Button>
-        </Flex>
-      </Container>
+        </Container>
+      </motion.div>
       <MobileNavigation navigationLinks={navigationLinks} />
     </>
   );
