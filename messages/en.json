@@ -82,6 +82,7 @@
   },
   "Footer": {
     "slogan": "The future of sports. Turn your game into gain.",
+    "logoAlt": "Plyaz Logo",
     "sections": {
       "product": {
         "title": "Product",
@@ -110,7 +111,6 @@
       }
     },
     "legal": {
-      "privacyPolicy": "Privacy policy",
       "cookiePolicy": "Cookie policy",
       "termsOfService": "Terms of service"
     },

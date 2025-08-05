@@ -8,13 +8,15 @@ import {
 } from "@plyaz/ui";
 import { useTranslations } from "next-intl";
 
-import { FeatureCard } from "./FeatureCard";
+import { FeatureCard } from "@/components";
+
 import {
   AthleteTokenizationIcon,
   FantasySportsIcon,
   FanEngagementIcon,
   EcosystemIcon,
 } from "./icons";
+
 
 export default function FeaturesSection() {
   const t = useTranslations("FeatureCards");

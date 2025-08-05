@@ -8,7 +8,7 @@ import { getMessages } from "next-intl/server";
 
 import Providers from "src/components/Providers";
 import { routing } from "src/i18n/routing";
-import Footer from "src/components/Footer";
+import { Footer } from "@/components";
 
 export const metadata: Metadata = {
   title: "Plyaz Fe Template",

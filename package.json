@@ -23,6 +23,7 @@
     "pnpm": ">=8.0.0"
   },
   "dependencies": {
+    "@plyaz/config": "^1.1.1",
     "@plyaz/devtools": "^1.7.4",
     "@plyaz/translations": "^1.4.0",
     "@plyaz/types": "^1.1.3",
