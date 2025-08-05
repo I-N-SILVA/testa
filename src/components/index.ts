@@ -5,3 +5,7 @@ export { FeatureCard } from "./FeatureCard";
 export { FooterLinkSection } from "./FooterLinkSection";
 export { Footer } from "./Footer";
 export { Terms } from "./Terms";
+export { default as PageTransition } from "./PageTransition";
+export { default as ScrollProgress } from "./ScrollProgress";
+export { default as LoadingSpinner } from "./LoadingSpinner";
+export { LoadingDots, SkeletonLoader } from "./LoadingSpinner";
