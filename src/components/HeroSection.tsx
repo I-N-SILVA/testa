@@ -1,61 +1,14 @@
+"use client";
+
 import { Flex, Heading, Paragraph, Section, Button } from "@plyaz/ui";
 import { useTranslations } from "next-intl";
 import React from "react";
-import { motion } from "motion/react";
-
 import { cn } from "src/utils/cn";
-
 import NavigationHeader from "./NavigationHeader";
+import AnimatedDiv from "./AnimatedDiv";
 
 const HeroSection = () => {
   const t = useTranslations("HeroSection");
-
-  const titleVariants = {
-    hidden: { opacity: 0, y: 30 },
-    visible: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: { 
-        delay: i * 0.2 + 0.5, 
-        duration: 0.8,
-        ease: "easeOut"
-      }
-    })
-  };
-
-  const subtitleVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: (i: number) => ({
-      opacity: 1,
-      y: 0,
-      transition: { 
-        delay: i * 0.15 + 1.1, 
-        duration: 0.6,
-        ease: "easeOut"
-      }
-    })
-  };
-
-  const buttonVariants = {
-    hidden: { opacity: 0, scale: 0.9 },
-    visible: {
-      opacity: 1,
-      scale: 1,
-      transition: { 
-        delay: 2.2, 
-        duration: 0.5,
-        ease: "easeOut"
-      }
-    }
-  };
-
-  const videoOverlayVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: { duration: 1.2, ease: "easeInOut" }
-    }
-  };
 
   return (
     <Section className="relative p-0 w-full h-dvh">
@@ -67,125 +20,62 @@ const HeroSection = () => {
         className="z-0 relative w-full h-full object-cover"
         poster="hero_image.png"
       >
-        <source src="mobile_hero.mp4" media="(width <= 1024px)" />
         <source src="web_hero.mp4" type="video/mp4" />
-        Your browser does not support HTML5 video.
+        <source src="mobile_hero.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
+      
       <NavigationHeader />
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={videoOverlayVariants}
+      
+      <AnimatedDiv 
         className="top-0 left-0 z-10 absolute bg-gradient-to-b from-31% from-white/10 via-70% via-white/95 to-100% to-white px-0.5 w-full h-full"
+        animation="fadeIn"
+        delay={0.5}
       >
         <Flex
-          direction="col"
-          align="center"
+          element="div"
+          direction="column"
           justify="center"
+          align="center"
           className="w-full h-full"
         >
-          <Heading
-            element="h1"
-            size="2xl"
-            className={cn(
-              "font-general font-semibold text-primary-foreground md:text-4xl xl:text-6xl text-center uppercase",
-            )}
+          <AnimatedDiv 
+            className="flex flex-col items-center justify-center space-y-8 px-6 text-center"
+            animation="staggerChildren"
+            delay={0.2}
           >
-            <motion.span 
-              className="block"
-              variants={titleVariants}
-              initial="hidden"
-              animate="visible"
-              custom={0}
-            >
-              {t("title.line1")}
-            </motion.span>
-            <motion.span 
-              className="block"
-              variants={titleVariants}
-              initial="hidden"
-              animate="visible"
-              custom={1}
-            >
-              {t("title.line2")}
-            </motion.span>
-            <motion.span 
-              className="block"
-              variants={titleVariants}
-              initial="hidden"
-              animate="visible"
-              custom={2}
-            >
-              {t("title.line3")}
-            </motion.span>
-          </Heading>
+            <div className="space-y-4">
+              <AnimatedDiv animation="fadeInUp" delay={0.5}>
+                <Heading
+                  size="6xl"
+                  element="h1"
+                  className="font-bold text-gray-900 leading-tight"
+                >
+                  {t("title")}
+                </Heading>
+              </AnimatedDiv>
+              
+              <AnimatedDiv animation="fadeInUp" delay={0.8}>
+                <Paragraph
+                  size="xl"
+                  className="mx-auto max-w-4xl font-medium text-gray-700 leading-relaxed"
+                >
+                  {t("subtitle")}
+                </Paragraph>
+              </AnimatedDiv>
+            </div>
 
-          <Paragraph
-            size="base"
-            className="mt-6 font-general font-medium text-secondary-foreground md:text-xl text-center not-italic"
-          >
-            <motion.span 
-              className="block"
-              variants={subtitleVariants}
-              initial="hidden"
-              animate="visible"
-              custom={0}
-            >
-              {t("subtitle.line1")}
-            </motion.span>
-            <motion.span 
-              className="block"
-              variants={subtitleVariants}
-              initial="hidden"
-              animate="visible"
-              custom={1}
-            >
-              {t("subtitle.line2")}
-            </motion.span>
-            <motion.span 
-              className="block"
-              variants={subtitleVariants}
-              initial="hidden"
-              animate="visible"
-              custom={2}
-            >
-              {t("subtitle.line3")}
-            </motion.span>
-          </Paragraph>
-          
-          <motion.div
-            variants={buttonVariants}
-            initial="hidden"
-            animate="visible"
-            className="flex gap-3 mt-9"
-          >
-            <motion.div
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            >
+            <AnimatedDiv animation="scaleIn" delay={1.2}>
               <Button
-                variant={"outline"}
-                className="p-6 border-primary-foreground rounded-none text-primary-foreground text-xs md:text-sm uppercase cursor-pointer hover:bg-primary-foreground hover:text-white transition-colors duration-300"
+                size="lg"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold px-8 py-3 rounded-lg transform transition-all duration-300 hover:scale-105 hover:shadow-lg"
               >
-                {t("cta.primary")}
+                {t("getStarted")}
               </Button>
-            </motion.div>
-            <motion.div
-              whileHover={{ scale: 1.05, y: -2 }}
-              whileTap={{ scale: 0.95 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
-            >
-              <Button
-                variant={"secondary"}
-                className="p-6 border border-primary-foreground rounded-none text-xs md:text-sm uppercase text-accent-foreground cursor-pointer hover:bg-accent transition-colors duration-300"
-              >
-                {t("cta.secondary")}
-              </Button>
-            </motion.div>
-          </motion.div>
+            </AnimatedDiv>
+          </AnimatedDiv>
         </Flex>
-      </motion.div>
+      </AnimatedDiv>
     </Section>
   );
 };

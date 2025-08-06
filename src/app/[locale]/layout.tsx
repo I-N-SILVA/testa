@@ -114,7 +114,12 @@ export default async function RootLayout({
           rel="preload"
           href="https://api.fontshare.com/v2/css?f[]=general-sans@1&display=swap"
           as="style"
-          onLoad="this.onload=null;this.rel='stylesheet'"
+          onLoad={() => {
+            const link = document.querySelector('link[rel="preload"][href*="general-sans"]');
+            if (link) {
+              (link as HTMLLinkElement).rel = 'stylesheet';
+            }
+          }}
         />
         <noscript>
           <link

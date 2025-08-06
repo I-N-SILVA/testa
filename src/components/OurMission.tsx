@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useScroll, useSpring } from "motion/react";
+
 import { useRef } from "react";
 import { Box, Flex, Heading } from "@plyaz/ui";
 import { useTranslation } from "@plyaz/translations/frontend";
@@ -36,13 +36,13 @@ const OurMission = () => {
         {t("OurMission.title")}
       </Heading>
       <Box className="relative flex-1">
-        <motion.div
+        <div
           className="block bottom-0 left-0 z-50 absolute mx-auto w-full xl:max-w-full max-w-5xl h-1 origin-center bg-accent-hover"
           style={{ scaleX }}
           initial={{ visibility: "hidden" }}
           animate={{ visibility: "visible" }}
         />
-        <motion.div
+        <div
           id="example"
           ref={ref}
           // TODO: To add a custom class, ignoring this rule, can be fixed later in the devtools
@@ -56,7 +56,7 @@ const OurMission = () => {
               title={mission.title}
             />
           ))}
-        </motion.div>
+        </div>
       </Box>
     </Flex>
   );

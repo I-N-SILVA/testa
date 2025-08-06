@@ -1,3 +1,5 @@
+"use client";
+
 import { 
   Section, 
   Container, 
@@ -10,7 +12,7 @@ import {
 } from "@plyaz/ui";
 import React from "react";
 import { useTranslations } from "next-intl";
-import { motion } from "motion/react";
+
 
 const EcosystemOverview = () => {
   const t = useTranslations("EcosystemOverview");
@@ -31,7 +33,7 @@ const EcosystemOverview = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" }
+      transition: { duration: 0.6 }
     }
   };
 
@@ -41,7 +43,7 @@ const EcosystemOverview = () => {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: { duration: 0.6, ease: "easeOut" }
+      transition: { duration: 0.6 }
     }
   };
 
@@ -50,7 +52,7 @@ const EcosystemOverview = () => {
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.5, ease: "easeOut" }
+      transition: { duration: 0.6 }
     }
   };
 
@@ -116,14 +118,14 @@ const EcosystemOverview = () => {
   return (
     <Section className="py-20 bg-gradient-to-br from-gray-50 to-white" id="ecosystem">
       <Container>
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={containerVariants}
+        <div
+          
+          
+          }
+          
         >
           {/* Header */}
-          <motion.div variants={titleVariants} className="text-center mb-16">
+          <div  className="text-center mb-16">
             <TranslatedText
               translationKey="EcosystemOverview.tag"
               element="p"
@@ -145,16 +147,16 @@ const EcosystemOverview = () => {
             >
               {t("subtitle")}
             </Paragraph>
-          </motion.div>
+          </div>
 
           {/* Cards Grid */}
           <Grid className="grid-cols-1 md:grid-cols-2 gap-8 mb-12">
             {ecosystemCards.map((card, index) => (
-              <motion.div
+              <div
                 key={card.id}
-                variants={cardVariants}
-                whileHover={{ y: -8, scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                
+                }
+                }
                 className="group"
               >
                 <Box className="bg-white rounded-2xl shadow-lg overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-500 h-full">
@@ -180,7 +182,7 @@ const EcosystemOverview = () => {
                           key={itemIndex}
                           initial={{ opacity: 0, x: -20 }}
                           whileInView={{ opacity: 1, x: 0 }}
-                          transition={{ delay: itemIndex * 0.1, duration: 0.4 }}
+                          }
                           className="flex items-start space-x-3"
                         >
                           <span className="flex-shrink-0 w-2 h-2 bg-emerald-500 rounded-full mt-2" />
@@ -191,10 +193,10 @@ const EcosystemOverview = () => {
                       ))}
                     </ul>
 
-                    <motion.div
-                      whileHover={{ scale: 1.05 }}
+                    <div
+                      }
                       whileTap={{ scale: 0.95 }}
-                      transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                      }
                     >
                       <Button
                         variant="outline"
@@ -202,20 +204,20 @@ const EcosystemOverview = () => {
                       >
                         {card.cta}
                       </Button>
-                    </motion.div>
+                    </div>
                   </div>
                 </Box>
-              </motion.div>
+              </div>
             ))}
           </Grid>
 
           {/* Bottom CTA */}
-          <motion.div variants={buttonVariants} className="text-center">
+          <div  className="text-center">
             <div className="flex flex-col md:flex-row gap-4 justify-center items-center">
-              <motion.div
-                whileHover={{ scale: 1.05, y: -2 }}
+              <div
+                }
                 whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                }
               >
                 <Button
                   variant="default"
@@ -223,11 +225,11 @@ const EcosystemOverview = () => {
                 >
                   {t("cta.backAthletes")}
                 </Button>
-              </motion.div>
-              <motion.div
-                whileHover={{ scale: 1.05, y: -2 }}
+              </div>
+              <div
+                }
                 whileTap={{ scale: 0.95 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                }
               >
                 <Button
                   variant="outline"
@@ -235,10 +237,10 @@ const EcosystemOverview = () => {
                 >
                   {t("cta.shareSuccess")}
                 </Button>
-              </motion.div>
+              </div>
             </div>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       </Container>
     </Section>
   );

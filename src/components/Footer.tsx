@@ -1,9 +1,11 @@
+"use client";
+
 import { Box, Flex, Heading, Paragraph, Text } from "@plyaz/ui";
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "@plyaz/translations/frontend";
-import { motion } from "motion/react";
+
 
 import { FooterLinkSection } from "@/components";
 import { footerSections, bottomLinks } from "@/constants/footer";
@@ -27,7 +29,7 @@ export const Footer = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" }
+      transition: { duration: 0.6 }
     }
   };
 
@@ -36,7 +38,7 @@ export const Footer = () => {
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.8, ease: "easeOut" }
+      transition: { duration: 0.6 }
     }
   };
 
@@ -45,7 +47,7 @@ export const Footer = () => {
     visible: {
       opacity: 1,
       x: 0,
-      transition: { duration: 0.5, ease: "easeOut" }
+      transition: { duration: 0.6 }
     }
   };
 
@@ -54,11 +56,11 @@ export const Footer = () => {
       element="footer"
       className="bg-secondary text-accent-foreground px-4 py-16 lg:px-10 lg:py-28 flex justify-center"
     >
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={containerVariants}
+      <div
+        
+        
+        }
+        
         className="w-full"
       >
         <Flex
@@ -66,13 +68,13 @@ export const Footer = () => {
           align="center"
           className="md:items-start w-full md:max-w-[1362px] gap-10 lg:gap-16 mx-auto"
         >
-          <motion.div 
-            variants={itemVariants}
+          <div 
+            
             className="w-full"
           >
             <Flex direction="col" gap="3" align="center" justify="center" className="md:gap-6 md:items-start md:max-h-[350px] -ml-0.5 w-full max-w-sm md:max-w-[1362px]">
               {/* Tagline */}
-              <motion.div variants={itemVariants}>
+              <div >
                 <Heading
                   element="h2"
                   size="lg"
@@ -80,13 +82,13 @@ export const Footer = () => {
                 >
                   {t("Footer.slogan")}
                 </Heading>
-              </motion.div>
+              </div>
 
               {/* Logo */}
-              <motion.div 
-                variants={logoVariants}
-                whileHover={{ scale: 1.02 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              <div 
+                
+                }
+                }
               >
                 <Image
                   src="/assets/svgs/plyaz-logo-full-light-mode.svg"
@@ -95,27 +97,27 @@ export const Footer = () => {
                   height={77}
                   className="invert h-auto mx-auto md:w-[1362px] md:h-auto cursor-pointer"
                 />
-              </motion.div>
+              </div>
             </Flex>
-          </motion.div>
+          </div>
 
           {/* Links Layout - Unified Responsive Grid */}
-          <motion.div variants={itemVariants} className="w-full max-w-md md:max-w-[1362px]">
+          <div  className="w-full max-w-md md:max-w-[1362px]">
             <Box className="grid grid-cols-2 gap-10 md:grid-cols-3 md:gap-0 md:justify-between md:flex">
-              <motion.div variants={linkVariants} className="md:order-1">
+              <div  className="md:order-1">
                 <FooterLinkSection section={footerSections.product} />
-              </motion.div>
-              <motion.div variants={linkVariants} className="md:order-3 justify-self-end">
+              </div>
+              <div  className="md:order-3 justify-self-end">
                 <FooterLinkSection section={footerSections.social} />
-              </motion.div>
-              <motion.div variants={linkVariants} className="col-span-2 md:col-span-1 md:order-2">
+              </div>
+              <div  className="col-span-2 md:col-span-1 md:order-2">
                 <FooterLinkSection section={footerSections.company} />
-              </motion.div>
+              </div>
             </Box>
-          </motion.div>
+          </div>
 
           {/* Bottom Links and Copyright - Unified */}
-          <motion.div variants={itemVariants} className="w-full max-w-md md:max-w-[1362px]">
+          <div  className="w-full max-w-md md:max-w-[1362px]">
             <Flex
               direction="col"
               gap="4"
@@ -123,11 +125,11 @@ export const Footer = () => {
             >
               <Flex className="justify-center md:justify-start gap-5 md:gap-10">
                 {bottomLinks.map((link, index) => (
-                  <motion.div
+                  <div
                     key={link.labelKey}
-                    variants={linkVariants}
-                    whileHover={{ y: -2 }}
-                    transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                    
+                    }
+                    }
                   >
                     <Link
                       href={link.href}
@@ -135,21 +137,21 @@ export const Footer = () => {
                     >
                       {t(link.labelKey as keyof typeof t)}
                     </Link>
-                  </motion.div>
+                  </div>
                 ))}
               </Flex>
-              <motion.div variants={itemVariants}>
+              <div >
                 <Paragraph
                   size="sm"
                   className="text-tertiary-foreground text-center md:text-left text-xs leading-4 font-medium"
                 >
                   {t("Footer.copyright")}
                 </Paragraph>
-              </motion.div>
+              </div>
             </Flex>
-          </motion.div>
+          </div>
         </Flex>
-      </motion.div>
+      </div>
     </Box>
   );
 };

@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import { motion } from "motion/react";
+
 
 import PlyazMode from "@/public/svgs/plyaz-icon-light-mode.svg";
 import PlyazLogo from "@/public/svgs/plyaz-logo-full-light-mode.svg";
@@ -32,8 +32,7 @@ const NavigationHeader = () => {
       opacity: 1,
       y: 0,
       transition: { 
-        duration: 0.6, 
-        ease: "easeOut",
+        duration: 0.6,
         staggerChildren: 0.1,
         delayChildren: 0.2
       }
@@ -45,7 +44,7 @@ const NavigationHeader = () => {
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.5, ease: "easeOut" }
+      transition: { duration: 0.6 }
     }
   };
 
@@ -54,7 +53,7 @@ const NavigationHeader = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.4, ease: "easeOut" }
+      transition: { duration: 0.6 }
     }
   };
 
@@ -63,26 +62,26 @@ const NavigationHeader = () => {
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.5, ease: "easeOut" }
+      transition: { duration: 0.6 }
     }
   };
 
   return (
     <>
-      <motion.div
-        initial="hidden"
-        animate="visible"
-        variants={navVariants}
+      <div
+        
+        
+        
       >
         <Container
           element="header"
           className="hidden lg:block top-5 left-6/12 z-20 fixed backdrop-blur-[20px] px-0 xl:w-full h-14 -translate-x-1/2 -translate-y-0 bg-accent-foreground"
         >
           <Flex>
-            <motion.div
-              variants={logoVariants}
-              whileHover={{ scale: 1.05 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+            <div
+              
+              }
+              }
             >
               <Flex
                 justify="center"
@@ -91,9 +90,9 @@ const NavigationHeader = () => {
               >
                 <Image alt="Plyaz mode" src={PlyazMode} />
               </Flex>
-            </motion.div>
+            </div>
             
-            <motion.div variants={logoVariants}>
+            <div >
               <Box>
                 <Flex
                   justify="center"
@@ -103,7 +102,7 @@ const NavigationHeader = () => {
                   <Image alt="Plyaz Logo" src={PlyazLogo} />
                 </Flex>
               </Box>
-            </motion.div>
+            </div>
             
             <Flex
               justify="center"
@@ -112,11 +111,11 @@ const NavigationHeader = () => {
               className="flex-1 px-7.5 border-y border-y-strong font-medium text-base uppercase"
             >
               {navigationLinks.map((item, index) => (
-                <motion.div
+                <div
                   key={item.label}
-                  variants={linkVariants}
-                  whileHover={{ y: -2, scale: 1.05 }}
-                  transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                  
+                  }
+                  }
                 >
                   <Link
                     href={item.href}
@@ -125,15 +124,15 @@ const NavigationHeader = () => {
                     {item.label}
                     <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-emerald-600 group-hover:w-full transition-all duration-300" />
                   </Link>
-                </motion.div>
+                </div>
               ))}
             </Flex>
             
-            <motion.div
-              variants={buttonVariants}
-              whileHover={{ scale: 1.05 }}
+            <div
+              
+              }
               whileTap={{ scale: 0.95 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              }
             >
               <Button
                 variant={"secondary"}
@@ -141,10 +140,10 @@ const NavigationHeader = () => {
               >
                 {t("actions.signUp")}
               </Button>
-            </motion.div>
+            </div>
           </Flex>
         </Container>
-      </motion.div>
+      </div>
       <MobileNavigation navigationLinks={navigationLinks} />
     </>
   );

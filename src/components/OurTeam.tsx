@@ -1,7 +1,9 @@
+"use client";
+
 import React from "react";
 import { Box, Container, Flex, Heading, Section } from "@plyaz/ui";
 import { useTranslation } from "@plyaz/translations/frontend";
-import { motion } from "motion/react";
+
 
 import { TEAM_MEMBERS } from "@/constants";
 
@@ -30,7 +32,7 @@ const OurTeam = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" }
+      transition: { duration: 0.6 }
     }
   };
 
@@ -39,7 +41,7 @@ const OurTeam = () => {
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 1, ease: "easeOut" }
+      transition: { duration: 0.6 }
     }
   };
 
@@ -49,7 +51,7 @@ const OurTeam = () => {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: { duration: 0.8, ease: "easeOut" }
+      transition: { duration: 0.6 }
     }
   };
 
@@ -59,8 +61,7 @@ const OurTeam = () => {
       opacity: 1,
       y: 0,
       transition: { 
-        duration: 0.6, 
-        ease: "easeOut",
+        duration: 0.6,
         staggerChildren: 0.1
       }
     }
@@ -68,13 +69,13 @@ const OurTeam = () => {
 
   return (
     <Section className="pt-16 lg:pt-28" id="about">
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={containerVariants}
+      <div
+        
+        
+        }
+        
       >
-        <motion.div variants={titleVariants}>
+        <div >
           <Heading
             element="h2"
             size="3xl"
@@ -82,9 +83,9 @@ const OurTeam = () => {
           >
             {t("OurTeam.title")}
           </Heading>
-        </motion.div>
+        </div>
         
-        <motion.div variants={backgroundVariants}>
+        <div >
           <Container className="flex lg:bg-[url('/assets/svgs/football-field-emerald.svg')] lg:bg-contain lg:bg-no-repeat lg:bg-center px-0 h-full min-h-full">
             <Flex
               className="w-full"
@@ -94,20 +95,20 @@ const OurTeam = () => {
               wrap="wrap"
             >
               <Box className="lg:mt-10 xl:mt-24 mb-16 pt-10 xl:pt-0 w-full">
-                <motion.div variants={ceoVariants}>
+                <div >
                   <Flex direction="col" gap="5" justify="center" align="center">
                     {ceo && <Member name={ceo.name} role={ceo.role} id={ceo.id} />}
                   </Flex>
-                </motion.div>
+                </div>
 
-                <motion.div variants={teamVariants}>
+                <div >
                   {others && <Members members={others} />}
-                </motion.div>
+                </div>
               </Box>
             </Flex>
           </Container>
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </Section>
   );
 };

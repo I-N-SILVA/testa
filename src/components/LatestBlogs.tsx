@@ -1,7 +1,9 @@
+"use client";
+
 import { Container, Section, Heading, Paragraph, Grid, Button, Box } from "@plyaz/ui";
 import React from "react";
 import { useTranslations } from "next-intl";
-import { motion } from "motion/react";
+
 
 const LatestBlogs = () => {
   const t = useTranslations("LatestBlogs");
@@ -22,7 +24,7 @@ const LatestBlogs = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" }
+      transition: { duration: 0.6 }
     }
   };
 
@@ -31,7 +33,7 @@ const LatestBlogs = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" }
+      transition: { duration: 0.6 }
     }
   };
 
@@ -40,7 +42,7 @@ const LatestBlogs = () => {
     visible: {
       opacity: 1,
       scale: 1,
-      transition: { duration: 0.5, ease: "easeOut" }
+      transition: { duration: 0.6 }
     }
   };
 
@@ -72,13 +74,13 @@ const LatestBlogs = () => {
   return (
     <Section className="pt-16 lg:pt-28" id="blogs">
       <Container>
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={containerVariants}
+        <div
+          
+          
+          }
+          
         >
-          <motion.div variants={titleVariants} className="text-center mb-12">
+          <div  className="text-center mb-12">
             <Heading
               element="h2"
               size="3xl"
@@ -86,15 +88,15 @@ const LatestBlogs = () => {
             >
               {t("title")}
             </Heading>
-          </motion.div>
+          </div>
 
           <Grid className="grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {blogs.map((blog) => (
-              <motion.div
+              <div
                 key={blog.id}
-                variants={blogVariants}
-                whileHover={{ y: -8 }}
-                transition={{ type: "spring", stiffness: 300, damping: 20 }}
+                
+                }
+                }
               >
                 <Box className="bg-white rounded-lg shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow duration-300 cursor-pointer group">
                   <div className="bg-gradient-to-r from-emerald-500 to-emerald-600 h-48 relative">
@@ -121,18 +123,18 @@ const LatestBlogs = () => {
                     </Paragraph>
                   </div>
                 </Box>
-              </motion.div>
+              </div>
             ))}
           </Grid>
 
-          <motion.div 
-            variants={buttonVariants}
+          <div 
+            
             className="text-center"
           >
-            <motion.div
-              whileHover={{ scale: 1.05 }}
+            <div
+              }
               whileTap={{ scale: 0.95 }}
-              transition={{ type: "spring", stiffness: 300, damping: 20 }}
+              }
             >
               <Button
                 variant="outline"
@@ -140,9 +142,9 @@ const LatestBlogs = () => {
               >
                 {t("cta.loadMore")}
               </Button>
-            </motion.div>
-          </motion.div>
-        </motion.div>
+            </div>
+          </div>
+        </div>
       </Container>
     </Section>
   );

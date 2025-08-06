@@ -1,8 +1,10 @@
+"use client";
+
 import { Container, Flex, Heading, Section } from "@plyaz/ui";
 import Image from "next/image";
 import React from "react";
 import { useTranslations } from "next-intl";
-import { motion } from "motion/react";
+
 
 import GrandSport from "@/public/Grand_sport.svg";
 import RiseLogo from "@/public/Rise_logo.svg";
@@ -27,7 +29,7 @@ const OurPartners = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.6, ease: "easeOut" }
+      transition: { duration: 0.6 }
     }
   };
 
@@ -37,7 +39,7 @@ const OurPartners = () => {
       opacity: 1,
       y: 0,
       scale: 1,
-      transition: { duration: 0.5, ease: "easeOut" }
+      transition: { duration: 0.6 }
     }
   };
 
@@ -50,11 +52,11 @@ const OurPartners = () => {
   return (
     <Section className="pt-16 lg:pt-28">
       <Container className="w-full">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          variants={containerVariants}
+        <div
+          
+          
+          }
+          
         >
           <Flex
             justify="center"
@@ -62,7 +64,7 @@ const OurPartners = () => {
             direction="col"
             className="gap-8 lg:gap-16"
           >
-            <motion.div variants={titleVariants}>
+            <div >
               <Heading
                 element="h2"
                 size="3xl"
@@ -70,7 +72,7 @@ const OurPartners = () => {
               >
                 {t("title")}
               </Heading>
-            </motion.div>
+            </div>
 
             <Flex
               justify="between"
@@ -79,9 +81,9 @@ const OurPartners = () => {
               wrap="wrap"
             >
               {partners.map((partner, index) => (
-                <motion.div
+                <div
                   key={partner.alt}
-                  variants={logoVariants}
+                  
                   whileHover={{ 
                     scale: 1.05,
                     transition: { type: "spring", stiffness: 300, damping: 20 }
@@ -94,11 +96,11 @@ const OurPartners = () => {
                     alt={partner.alt}
                     className={`${partner.className} filter grayscale hover:grayscale-0 transition-all duration-300`}
                   />
-                </motion.div>
+                </div>
               ))}
             </Flex>
           </Flex>
-        </motion.div>
+        </div>
       </Container>
     </Section>
   );

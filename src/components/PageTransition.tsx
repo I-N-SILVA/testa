@@ -1,53 +1,31 @@
 "use client";
-import { motion, AnimatePresence } from "motion/react";
+
 import { usePathname } from "next/navigation";
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 interface PageTransitionProps {
   children: React.ReactNode;
 }
 
-const pageVariants = {
-  initial: { 
-    opacity: 0, 
-    y: 20,
-    scale: 0.98
-  },
-  in: { 
-    opacity: 1, 
-    y: 0,
-    scale: 1,
-    transition: {
-      duration: 0.4,
-      ease: "easeOut"
-    }
-  },
-  out: { 
-    opacity: 0, 
-    y: -20,
-    scale: 1.02,
-    transition: {
-      duration: 0.3,
-      ease: "easeIn"
-    }
-  }
-};
-
 export default function PageTransition({ children }: PageTransitionProps) {
   const pathname = usePathname();
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(false);
+    const timer = setTimeout(() => setIsVisible(true), 100);
+    return () => clearTimeout(timer);
+  }, [pathname]);
 
   return (
-    <AnimatePresence mode="wait" initial={false}>
-      <motion.div
-        key={pathname}
-        initial="initial"
-        animate="in"
-        exit="out"
-        variants={pageVariants}
-        className="min-h-screen"
-      >
-        {children}
-      </motion.div>
-    </AnimatePresence>
+    <div 
+      className={`transition-all duration-400 ${
+        isVisible 
+          ? 'opacity-100 translate-y-0 scale-100' 
+          : 'opacity-0 translate-y-5 scale-98'
+      }`}
+    >
+      {children}
+    </div>
   );
 }
