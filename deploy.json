@@ -1,0 +1,37 @@
+{
+  "name": "plyaz-landing-enhanced",
+  "alias": ["plyaz-landing", "plyaz-enhanced"],
+  "version": 2,
+  "public": false,
+  "github": {
+    "enabled": true,
+    "autoAlias": true,
+    "silent": true
+  },
+  "build": {
+    "env": {
+      "NEXT_PUBLIC_BASE_URL": "@next_public_base_url",
+      "NODE_ENV": "production",
+      "NEXT_PUBLIC_COMING_SOON": "false"
+    }
+  },
+  "env": {
+    "NEXT_PUBLIC_BASE_URL": {
+      "description": "The base URL of your deployed site (e.g., https://plyaz-landing.vercel.app)",
+      "value": "@next_public_base_url"
+    },
+    "GOOGLE_SITE_VERIFICATION": {
+      "description": "Google Search Console site verification code (optional)",
+      "value": "@google_site_verification"
+    },
+    "NEXT_PUBLIC_GA_MEASUREMENT_ID": {
+      "description": "Google Analytics 4 Measurement ID (optional, format: G-XXXXXXXXXX)",
+      "value": "@ga_measurement_id"
+    }
+  },
+  "regions": ["iad1", "sfo1"],
+  "installCommand": "npm install --legacy-peer-deps",
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "outputDirectory": ".next"
+}
