@@ -1,9 +1,4 @@
 {
-  "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "npm run build",
-  "devCommand": "npm run dev",
-  "installCommand": "npm install --legacy-peer-deps",
-  "framework": "nextjs",
   "functions": {
     "src/app/sitemap.ts": {
       "maxDuration": 30
@@ -60,5 +55,5 @@
       "destination": "/sitemap.xml",
       "permanent": true
     }
-  ],
+  ]
 }
