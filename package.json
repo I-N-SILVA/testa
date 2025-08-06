@@ -16,7 +16,11 @@
     "test:ui": "vitest --ui",
     "format": "prettier --write './**/*.{js,ts,tsx,js,jsx,mjs,cjs}'",
     "format:check": "prettier --check './**/*.{js,ts,tsx,js,jsx,mjs,cjs}'",
-    "type:check": "tsc --noEmit"
+    "type:check": "tsc --noEmit",
+    "deploy": "./scripts/deploy.sh",
+    "deploy:vercel": "vercel --prod",
+    "deploy:preview": "vercel",
+    "verify:deployment": "node scripts/verify-deployment.js"
   },
   "engines": {
     "node": ">=22.4.0",
@@ -31,7 +35,7 @@
     "@vercel/analytics": "^1.5.0",
     "clsx": "^2.1.1",
     "lucide-react": "^0.525.0",
-    "motion": "^12.23.11",
+    "framer-motion": "^12.3.11",
     "next": "15.3.3",
     "next-intl": "^4.3.4",
     "react": "^19.0.0",
@@ -93,5 +97,4 @@
     "typescript-eslint": "^8.34.0",
     "vitest": "3.2.4"
   },
-  "packageManager": "pnpm@10.11.0+sha512.6540583f41cc5f628eb3d9773ecee802f4f9ef9923cc45b69890fb47991d4b092964694ec3a4f738a420c918a333062c8b925d312f42e4f0c263eb603551f977"
 }
